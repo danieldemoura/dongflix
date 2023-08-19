@@ -1,0 +1,35 @@
+.btnDefault {
+    padding: var(--c-button-primary-padding);
+    color: var(--text-color);
+    cursor: pointer;
+    border: none;
+
+    display: block;
+    width: 100%;
+    max-width: 32.0rem;
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.btnDefault.primary {
+    background-color: var(--c-button-primary-background-color);
+    transition: background .3s ease;
+    font-size: 1.4rem;
+}
+
+.btnDefault.primary:hover {
+    background-color: var(--c-button-primary-hover-background-color);
+}
+
+.secundary {
+    background-color: var(--c-button-secundary-background-color);
+    outline: .1rem solid var(--c-button-secundary-border-color);
+}
+
+.btnDefault.secundary:hover {
+    background-color: var(--c-button-secundary-hover-background-color);
+    backdrop-filter: blur(.3rem);
+}

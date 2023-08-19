@@ -1,0 +1,50 @@
+{
+    "advertisements": [
+        {
+            "id": 0,
+            "title": "O NOVO MUNDO DOS ANIMES CHINESES.\n SE PREPARE PARA HISTÓRIAS INÉDITAS.",
+            "message": "Planos a partir de R$ 4,99 BRL/Mês.\n Cancele a qualquer momento.\n Cadastre-se agora e ganhe 15 dias grátis.",
+            "slideShow": [
+                "../public/slide-show/pai.jpg",
+                "../public/slide-show/protagonista.jpg",
+                "../public/slide-show/protagonista2.jpg",
+                "../public/slide-show/menina.jpg",
+                "../public/slide-show/mulher.jpg",
+                "../public/slide-show/velho.jpg",
+                "../public/slide-show/pai.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "title":  "VOCÊ GOSTA DE SCI-FI? \n PORQUE AQUI TEM!",
+            "message": "Os melhores animes chineses de ficção ciêntifica e pós-apocalipco você só encontra aqui.",
+            "image": "../public/background/sci-fi.jpg"
+        },
+        {
+            "id": 2,
+            "title": "PARA OS FÃS DA AÇÃO. \n ANIMES CHINESES DE ARTES MARCIAIS.",
+            "message": "Os melhores animes chineses não só de ação, mas os melhores de artes marciais da China.",
+            "image": "../public/background/acao.jpg"
+        },
+        {
+            "id": 3,
+            "title": "CULTIVO E IMORTALIDADE. \n HISTÓRIAS DO TAOISMO.",
+            "message": "Cultivo o gênero de histórias chinesa que aborda temas de espiritualidade, imortalidade e reencanção, e o autodesenvolvimento do poder espiritual. \n \n Essa é uma ótima escolha de gênero de animação para aqueles que gostam de obras mais voltadas para a espiritualidade.",
+            "image": "../public/background/cultivo.jpg"
+        },
+        {
+            "id": 4,
+            "title": "NÃO GOSTA DE 3D? \n O 3D QUE BEIRA O REALISMO.",
+            "message": "Se você já viu muito 3D ruim, então atenção aqui você verá os melhores animes chineses feito em 3D que quase se aproxima da realidade, junto com histórias dramáticas.",
+            "image": "../public/background/cgi.jpg"
+        }        
+    ],
+    "donghuas": [
+        {
+            "id": 0,
+            "title": "The Island Of Siliang",
+            "message": "Desde a própria criação do universo, houve uma divisão entre os Deuses, os Imortais e os Humanos. Vivendo em tempos e espaços diferentes, cada uma das três raças recebeu papéis muito diferentes."
+        }
+    ]
+
+}

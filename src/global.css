@@ -1,0 +1,44 @@
+:root {
+    font-size: 62.5%;
+
+    --text-color: #FFFFFF;
+    --c-button-primary-background-color: #0042eb;
+    --c-button-primary-hover-background-color: #0011ff;
+    --c-button-primary-padding: 1.3rem 0rem;
+    --c-button-secundary-background-color: rgba(242, 242, 242, 0.05);
+    --c-button-secundary-hover-background-color: rgba(0, 0, 0, 0.411);
+    --c-button-secundary-border-color: #FFFFFF;
+    --c-menu-background-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+    --c-menu-link-border-bottom-color: #0085FF;
+    --c-subscription-plans-background-color: #141414;
+    --footer-background-color: #0D0D0D;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+
+::-webkit-scrollbar {
+    width: .8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0085FF;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0D0D0D;
+}
+
+
+p, th, a, footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Rowdies', cursive;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #111;
+}

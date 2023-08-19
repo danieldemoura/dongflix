@@ -1,0 +1,10 @@
+.slideImages {
+    display: flex;
+}
+
+.background {
+    flex-shrink: 0;
+    
+    width: 100%;
+    object-fit: cover;
+}

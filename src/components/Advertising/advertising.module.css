@@ -1,0 +1,68 @@
+.sectionImage {
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    min-height: 60vh;
+    padding: 5.5rem 1rem;
+    backdrop-filter: brightness(0.5);
+}
+
+.sectionTitle {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    max-width: 80%;
+    white-space: pre-line;
+}
+
+.description {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    max-width: 80%;
+    white-space: pre-line;
+}
+
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+   
+    .sectionImage {
+        padding: 9.5rem 0rem 0rem 4.5rem;
+    }
+
+    .sectionContainer {
+        backdrop-filter: brightness(1);
+        padding: initial;
+        gap: initial;
+        height: 100vh;
+    }
+
+    .sectionTitle {
+        font-size: 4.8rem;
+        max-width: 70.5rem;
+        white-space: pre-line;
+    }
+    
+    .description {
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+        max-width: 52.6rem;
+        width: 100%;
+    }
+
+    
+}
