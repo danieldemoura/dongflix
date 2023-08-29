@@ -1,0 +1,57 @@
+.carouselWrapper {
+    padding: 8rem 0rem 9rem 2rem;
+}
+
+.carouselHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.boxButton {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.boxButton svg {
+    cursor: pointer;
+    background-color: #252525;
+    width: 3rem;
+    padding: 0.3rem;
+}
+
+.boxButton svg:hover {
+    background-color: var(--c-button-primary-background-color);
+}
+
+.carouselSlider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: hidden;
+    padding: 0rem 4.7rem 0rem 0rem;
+    scroll-behavior: smooth;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .carouselWrapper {
+        padding: 4rem 0rem 9rem 5rem;
+    }
+
+    .title {
+        font-size: 2.4rem;
+    }
+
+}

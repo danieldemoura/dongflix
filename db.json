@@ -1,50 +1,158 @@
 {
-    "advertisements": [
-        {
-            "id": 0,
-            "title": "O NOVO MUNDO DOS ANIMES CHINESES.\n SE PREPARE PARA HISTÓRIAS INÉDITAS.",
-            "message": "Planos a partir de R$ 4,99 BRL/Mês.\n Cancele a qualquer momento.\n Cadastre-se agora e ganhe 15 dias grátis.",
-            "slideShow": [
-                "../public/slide-show/pai.jpg",
-                "../public/slide-show/protagonista.jpg",
-                "../public/slide-show/protagonista2.jpg",
-                "../public/slide-show/menina.jpg",
-                "../public/slide-show/mulher.jpg",
-                "../public/slide-show/velho.jpg",
-                "../public/slide-show/pai.jpg"
-            ]
-        },
-        {
-            "id": 1,
-            "title":  "VOCÊ GOSTA DE SCI-FI? \n PORQUE AQUI TEM!",
-            "message": "Os melhores animes chineses de ficção ciêntifica e pós-apocalipco você só encontra aqui.",
-            "image": "../public/background/sci-fi.jpg"
-        },
-        {
-            "id": 2,
-            "title": "PARA OS FÃS DA AÇÃO. \n ANIMES CHINESES DE ARTES MARCIAIS.",
-            "message": "Os melhores animes chineses não só de ação, mas os melhores de artes marciais da China.",
-            "image": "../public/background/acao.jpg"
-        },
-        {
-            "id": 3,
-            "title": "CULTIVO E IMORTALIDADE. \n HISTÓRIAS DO TAOISMO.",
-            "message": "Cultivo o gênero de histórias chinesa que aborda temas de espiritualidade, imortalidade e reencanção, e o autodesenvolvimento do poder espiritual. \n \n Essa é uma ótima escolha de gênero de animação para aqueles que gostam de obras mais voltadas para a espiritualidade.",
-            "image": "../public/background/cultivo.jpg"
-        },
-        {
-            "id": 4,
-            "title": "NÃO GOSTA DE 3D? \n O 3D QUE BEIRA O REALISMO.",
-            "message": "Se você já viu muito 3D ruim, então atenção aqui você verá os melhores animes chineses feito em 3D que quase se aproxima da realidade, junto com histórias dramáticas.",
-            "image": "../public/background/cgi.jpg"
-        }        
-    ],
-    "donghuas": [
-        {
-            "id": 0,
-            "title": "The Island Of Siliang",
-            "message": "Desde a própria criação do universo, houve uma divisão entre os Deuses, os Imortais e os Humanos. Vivendo em tempos e espaços diferentes, cada uma das três raças recebeu papéis muito diferentes."
-        }
-    ]
-
+  "users": [
+    {
+      "name": "Daniel De Moura",
+      "avatar": "https://github.com/danieldemoura.png",
+      "email": "naruto@mailna.co",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Mathes",
+      "avatar": "https://github.com/mathes.png",
+      "email": "sdasfsd@hfghfg",
+      "password": "0101",
+      "id": 2
+    },
+    {
+      "name": "Daniel De Moura",
+      "avatar": "https://github.com/danieldemoura.png",
+      "email": "f4de19f47a@mymaily.lol",
+      "password": "asdf",
+      "id": 3
+    },
+    {
+      "name": "Daniel De Moura",
+      "avatar": "https://github.com/danieldemoura.png",
+      "email": "sas@dgdfgdfgf",
+      "password": "aaaa",
+      "id": 4
+    },
+    {
+      "name": "animes",
+      "avatar": "https://github.com/animes.png",
+      "email": "f4de19f47a@mymaily.lol",
+      "password": "0000",
+      "id": 5
+    },
+    {
+      "name": "Daniel De Moura",
+      "avatar": "https://github.com/danieldemoura.png",
+      "email": "nazuyamikima@gmail.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "name": "naruto",
+      "avatar": "https://github.com/naruto.png",
+      "email": "sas@dgdfgdfgf",
+      "password": "0101",
+      "id": 7
+    },
+    {
+      "name": "Daniel De Moura",
+      "avatar": "https://github.com/danieldemoura.png",
+      "email": "naruto@mailna.co",
+      "password": "aaaa",
+      "id": 8
+    }
+  ],
+  "advertisements": [
+    {
+      "id": 0,
+      "title": "O NOVO MUNDO DOS ANIMES CHINESES.\n SE PREPARE PARA HISTÓRIAS INÉDITAS.",
+      "message": "Planos a partir de R$ 4,99 BRL/Mês.\n Cancele a qualquer momento.\n Cadastre-se agora e ganhe 15 dias grátis.",
+      "slideShow": [
+        "../public/slide-show/pai.jpg",
+        "../public/slide-show/protagonista.jpg",
+        "../public/slide-show/protagonista2.jpg",
+        "../public/slide-show/menina.jpg",
+        "../public/slide-show/mulher.jpg",
+        "../public/slide-show/velho.jpg",
+        "../public/slide-show/pai.jpg"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "VOCÊ GOSTA DE SCI-FI? \n PORQUE AQUI TEM!",
+      "message": "Os melhores animes chineses de ficção ciêntifica e pós-apocalipco você só encontra aqui.",
+      "image": "../public/background/sci-fi.jpg"
+    },
+    {
+      "id": 2,
+      "title": "PARA OS FÃS DA AÇÃO. \n ANIMES CHINESES DE ARTES MARCIAIS.",
+      "message": "Os melhores animes chineses não só de ação, mas os melhores de artes marciais da China.",
+      "image": "../public/background/acao.jpg"
+    },
+    {
+      "id": 3,
+      "title": "CULTIVO E IMORTALIDADE. \n HISTÓRIAS DO TAOISMO.",
+      "message": "Cultivo o gênero de histórias chinesa que aborda temas de espiritualidade, imortalidade e reencanção, e o autodesenvolvimento do poder espiritual. \n \n Essa é uma ótima escolha de gênero de animação para aqueles que gostam de obras mais voltadas para a espiritualidade.",
+      "image": "../public/background/cultivo.jpg"
+    },
+    {
+      "id": 4,
+      "title": "NÃO GOSTA DE 3D? \n O 3D QUE BEIRA O REALISMO.",
+      "message": "Se você já viu muito 3D ruim, então atenção aqui você verá os melhores animes chineses feito em 3D que quase se aproxima da realidade, junto com histórias dramáticas.",
+      "image": "../public/background/cgi.jpg"
+    }
+  ],
+  "donghuas": [
+    {
+      "id": 0,
+      "title": "The Island Of Siliang",
+      "sinopse": "Desde a própria criação do universo, houve uma divisão entre os Deuses, os Imortais e os Humanos. Vivendo em tempos e espaços diferentes, cada uma das três raças recebeu papéis muito diferentes.",
+      "trailer": "ACAKCV1E1Wc",
+      "landscapePoster": "https://www.themoviedb.org/t/p/original/cArlsGwxqeYk6dK3tj6lte4DIuz.jpg",
+      "portraitPoster": ""
+    },
+    {
+      "id": 1,
+      "title": "Villain Initialization",
+      "sinopse": "O vilão Ling Chen tem uma história de ódio e violência com o herói, Ye Zimu. Do nada, um reset fez com que Ling Chen voltasse para quando ele tinha 17 anos! Ele tem a chance de parar o herói em seu caminho, antes que Ye Zimu cresça e se torne seu pior inimigo...",
+      "trailer": "v38cltm",
+      "landscapePoster": "https://img.youtube.com/vi/9vrWDt5uvO0/maxresdefault.jpg",
+      "portraitPoster": ""
+    },
+    {
+      "id": 2,
+      "title": "Ling Long: Incarnation",
+      "sinopse": "Em um futuro próximo, o mundo humano está superlotado, em uma ação urgente foi feita uma viajem pela galáxia, a procura de um novo lar. \n O avanço de tudo vai de maneira metódica de acordo com o passar do tempo, assim como as mudanças de fase da lua, durante décadas, o mundo sofre por destruições, extremas mudanças geológicas, e por fim não restou uma grande quantidade de humanos após essas catástrofes. Lentamente o mundo acalma-se e gradualmente é restaurado, pessoas nos escombros, e do fundo de abismos ressurgem nesta terra tão familiar e ao mesmo tempo estranha. Usando tudo para dominar e proclamar que ainda são os mestres deste mundo.",
+      "trailer": "v380c6t",
+      "landscapePoster": "https://www.themoviedb.org/t/p/original/k6Yg53yBdsfZeRLJh0WgrG2P11f.jpg",
+      "portraitPoster": ""
+    },
+    {
+      "id": 3,
+      "title": "A Record of a Mortal’s Journey to Immortality",
+      "sinopse": "Um garoto pobre e comum de uma aldeia se junta a uma seita menor em Jiang Hu e se torna um discípulo não oficial por acaso. Como Han Li, um plebeu de nascimento, estabelecerá um ponto de apoio para si mesmo em sua seita? \n Com sua aptidão medíocre, ele deve atravessar com sucesso o caminho traiçoeiro do cultivo e evitar a observação daqueles que podem causar-lhe mal. Esta é a história de um mortal comum que, contra todas as probabilidades, colide com demônios diabólicos e celestiais antigos, a fim de encontrar seu próprio caminho para a imortalidade.",
+      "trailer": "v38cs9s",
+      "landscapePoster": "https://www.themoviedb.org/t/p/original/kWByUrGgS4mYyvQ2mG95gzblBOj.jpg",
+      "portraitPoster": ""
+    },
+    {
+      "id": 4,
+      "title": "Nirvana of Storm Rider",
+      "sinopse": "O rugido do dragão nos nove céus traz uma mudança surpreendente, encontros entre vento e nuvens fazem o firmamento rir! \n Adaptado da clássica propriedade intelectual de Ma Rongcheng, 'Feng Yun', 'Feng Yun Bian' combina de forma brilhante o estilo nacional das artes marciais com a imaginação futurística da ficção científica, proporcionando a todos uma experiência emocionante para os olhos e os ouvidos!",
+      "trailer": "v37ywx6",
+      "landscapePoster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx137649-eGZSHQTem0Md.png",
+      "portraitPoster": ""
+    },
+    {
+      "id": 5,
+      "title": "Ling Long: Incarnation 2",
+      "sinopse": "2ª Temporada de Ling Long, continuação de onde parou a primeira temporada.",
+      "trailer": "v38cqmp",
+      "landscapePoster": "https://www.themoviedb.org/t/p/original/zlVB0g4dLcXNVc0ShaVHaM0SjXf.jpg",
+      "portraitPoster": ""
+    },
+    {
+      "id": 6,
+      "title": "Perfect World",
+      "sinopse": "A animação “Perfect World” é adaptada do romance de mesmo nome [Perfect World]. \n Ele nasceu para cultivar o Tao, e para a catástrofe, ele se tornou uma chuva de bilhões de sangue, aspergida através dos anos eternos, experimentando o refinamento de incontáveis ​​tempo e espaço, e o batismo dos anos, ele se tornou eterno, ele se tornou em auto-existência. Veja como Shi Hao, o personagem principal, é extremamente brilhante em sua vida e cria lendas sem fim.",
+      "trailer": "v37v32k",
+      "landscapePoster": "https://www.themoviedb.org/t/p/original/uF5PdoJj2ZVJOD8JbL0bfPhhwBr.jpg",
+      "portraitPoster": ""
+    }
+  ]
 }

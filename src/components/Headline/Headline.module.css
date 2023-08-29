@@ -1,14 +1,14 @@
 .headLine {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
 
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: 10;
     padding-left: 1rem;
+    position: absolute;
+    z-index: 9;
+    margin-top: 20%;
 }
 
 .headlineTitle {
@@ -20,27 +20,37 @@
 }
 
 .description {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--text-color);
 
     max-width: 34.0rem;
+    max-height: 15rem;
     margin-bottom: 1.4rem;
+    
     width: 100%;
     white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Número de linhas que deseja mostrar */
+    -webkit-box-orient: vertical;
 }
 
 @media screen and (min-width: 768px) {
-    .headlineTitle {
-        font-size: 3.4rem;
-    }
-}
-
-@media screen and (min-width: 1024px) {
     .headLine {
+        position: absolute;
+        z-index: 9;
         padding-left: 4rem;
+        justify-content: center;
+        margin-top: initial;
     }
 
     .headlineTitle {
         font-size: 4.8rem;
+    }
+
+    .description {
+        font-size: 1.6rem;
     }
 }

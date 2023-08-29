@@ -1,0 +1,66 @@
+.headLine {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    pointer-events: none;
+}
+
+.headlineTitle {
+    color: var(--text-color);
+    font-size: 2.4rem;
+    
+    max-width: 57.6rem;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 1.4rem;
+    color: var(--text-color);
+
+    max-width: 55rem;
+    max-height: 15rem;
+    margin-bottom: 1.4rem;
+    padding-right: 1rem;
+    
+    width: 100%;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Número de linhas que deseja mostrar */
+    -webkit-box-orient: vertical;
+}
+
+.boxButton {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    pointer-events: all;
+    height: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .headLine {
+        position: absolute;
+        z-index: 9999;
+        padding-left: 4rem;
+        justify-content: center;
+    }
+
+    .headlineTitle {
+        font-size: 4.8rem;
+    }
+
+    .description {
+        font-size: 1.6rem;
+    }
+
+    .boxButton {
+        height: 5rem;
+    }
+}

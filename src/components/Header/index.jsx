@@ -1,24 +1,18 @@
-import { header } from "./header.module.css"
-import Banner from "../Banner"
-import Headline from "../Headline"
-import SlideShow from "../SlideShow"
-import useApiData from "../../hooks/useApiData"
-import Video from "../Video"
-import { useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom";
+import styles from "./Header.module.css";
+import HeadlineAnime from "../HeadlineAnime";
+import Headline from "../Headline";
+import Banner from "../Banner";
 
 export default function Header() {
-    const [banner] = useApiData();
     const { pathname } = useLocation();
-    const { title, message, slideShow } = banner.length > 0 ? banner.slice(0, 1)[0] : [];    
-    
-    return (
-        <header className={header}>
-            <Banner>
-                <Headline title={title} text={message}/>
 
+    return (
+        <header className={styles.header}>
+            <Banner>
                 { pathname === "/" 
-                    ? <SlideShow slideShow={slideShow}/>
-                    : <Video /> 
+                    ? <> <Headline /> </>
+                    : <> <HeadlineAnime /> </> 
                 }
             </Banner>
         </header>

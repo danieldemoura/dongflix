@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react"
-import { slideImages, background } from "./slideShow.module.css"
+import { useEffect, useState } from "react";
+import styles from "./SlideShow.module.css";
 
 export default function SlideShow({ slideShow }) {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isTransitionEnabled, setIsTransitionEnabled] = useState(true);
 
-    const styles = {
+    const animation = {
         transform: `translateX(-${currentSlide * 100}%)`,
         transition: isTransitionEnabled ? ".5s ease" : "none"
     }
@@ -25,13 +25,13 @@ export default function SlideShow({ slideShow }) {
     },[currentSlide, slideShow]);
 
     return (
-        <div className={slideImages}>
+        <div className={styles.slideImages}>
             {Array.isArray(slideShow) && slideShow.map((image, index) => {
                 return <img
                         src={image} 
                         key={index}
-                        style={styles} 
-                        className={background} 
+                        style={animation} 
+                        className={styles.background} 
                         alt=""
                     />
             })}

@@ -1,69 +1,68 @@
-import { title, plansPrice, table, row, cell, th, button, small } from "./subscriptionPlans.module.css"
-import { btnDefault, primary} from "../ButtonLink/button.module.css"
 import { ReactComponent as No } from "../../assets/svg/no.svg"
 import { ReactComponent as Yes } from "../../assets/svg/yes.svg"
-import { Link } from "react-router-dom"
+import styles from "./SubscriptionPlans.module.css"
+import ButtonLink from "../ButtonLink"
 
 export default function SubscriptionPlans() {
     return (
-        <section className={plansPrice}>
-            <h2 className={title}>Escolha o melhor plano para você</h2>
-            <table className={table}>
+        <section className={styles.plansPrice}>
+            <h2 className={styles.title}>Escolha o melhor plano para você</h2>
+            <table className={styles.table}>
                 <thead>
-                    <tr className={row}>
+                    <tr className={styles.row}>
                         <th></th>
-                        <th className={th}>BÁSICO</th>
-                        <th className={th}>PLUS</th>
-                        <th className={th}>PREMIUM</th>
+                        <th className={styles.th}>BÁSICO</th>
+                        <th className={styles.th}>PLUS</th>
+                        <th className={styles.th}>PREMIUM</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className={row}>
-                        <th className={cell}>Preço por mês</th>
-                        <td className={cell}>R$ 4,99</td>
-                        <td className={cell}>R$ 8,99</td>
-                        <td className={cell}>R$ 14,99</td>
+                    <tr className={styles.row}>
+                        <th className={styles.cell}>Preço por mês</th>
+                        <td className={styles.cell}>R$ 4,99</td>
+                        <td className={styles.cell}>R$ 8,99</td>
+                        <td className={styles.cell}>R$ 14,99</td>
                     </tr>
-                    <tr className={row}>
-                        <th className={cell}>Resolução</th>
-                        <td className={cell}>720p</td>
-                        <td className={cell}>1080P</td>
-                        <td className={cell}>4k</td>
+                    <tr className={styles.row}>
+                        <th className={styles.cell}>Resolução</th>
+                        <td className={styles.cell}>720p</td>
+                        <td className={styles.cell}>1080P</td>
+                        <td className={styles.cell}>4k</td>
                     </tr>
-                    <tr className={row}>
-                        <th className={cell}>Sem anúncios</th>
-                        <td className={cell}>
+                    <tr className={styles.row}>
+                        <th className={styles.cell}>Sem anúncios</th>
+                        <td className={styles.cell}>
                             <No />
                         </td>
-                        <td className={cell}>
+                        <td className={styles.cell}>
                             <Yes />
                         </td>
-                        <td className={cell}>
+                        <td className={styles.cell}>
                             <Yes />
                         </td>
                     </tr>
-                    <tr className={row}>
-                        <th className={cell}>Download</th>
-                        <td className={cell}>
+                    <tr className={styles.row}>
+                        <th className={styles.cell}>Download</th>
+                        <td className={styles.cell}>
                             <No />
                         </td>
-                        <td className={cell}>
+                        <td className={styles.cell}>
                             <No />
                         </td>
-                        <td className={cell}>
+                        <td className={styles.cell}>
                             <Yes />
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <div className={button}>
-                <Link to="/home" 
-                    className={`${btnDefault} 
-                    ${primary} 
-                    ${small}`}
+            <div className={styles.button}>
+                <ButtonLink 
+                    url="/sign-up"
+                    typeStyle="primary" 
+                    size="small"
                 >
-                        {"ASSINAR DONGFLIX"}
-                </Link>
+                    ASSINAR DONGFLIX
+                </ButtonLink>
             </div>
         </section>
     )

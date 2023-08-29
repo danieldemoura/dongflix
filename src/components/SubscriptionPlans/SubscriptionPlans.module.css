@@ -61,14 +61,9 @@
     padding-top: 4.0rem;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
     .title {
         font-size: 3.2rem;
-    }
-
-    .small {
-        width: 22rem;
-        padding: 1rem 0rem;
     }
 }
 

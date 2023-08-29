@@ -33,3 +33,31 @@
     background-color: var(--c-button-secundary-hover-background-color);
     backdrop-filter: blur(.3rem);
 }
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 12rem;
+    height: 100%;
+}
+
+.small {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .play {
+        width: 17rem;
+    }
+
+    .btnDefault.primary {
+        font-size: 1.6rem;
+    }
+
+    .small {
+        width: 22rem;
+        padding: 1rem 0rem;
+    }
+}

@@ -1,8 +1,8 @@
-import { banner } from "./banner.module.css"
+import styles from "./Banner.module.css"
 
 export default function Banner({ children }) {
     return (
-        <div className={banner}>
+        <div className={styles.banner}>
             { children }
         </div>
     )

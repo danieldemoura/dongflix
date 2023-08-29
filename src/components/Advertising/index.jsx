@@ -1,6 +1,6 @@
-import { sectionImage, sectionTitle, description, sectionContainer } from "./advertising.module.css"
 import SubscriptionPlans from "../SubscriptionPlans"
 import useApiData from "../../hooks/useApiData";
+import styles from "./Advertising.module.css"
 
 export default function Advertising() {
     const [banner] = useApiData();
@@ -9,12 +9,12 @@ export default function Advertising() {
     return (
         <>
             {advertisements.map((section) => (
-                <section className={sectionImage} style={{backgroundImage: `url(${section.image})`}} key={section.id}>
-                    <div className={sectionContainer}>
-                        <h2 className={sectionTitle}>
+                <section className={styles.sectionImage} style={{backgroundImage: `url(${section.image})`}} key={section.id}>
+                    <div className={styles.sectionContainer}>
+                        <h2 className={styles.sectionTitle}>
                             {section.title}
                         </h2>
-                        <p className={description}>
+                        <p className={styles.description}>
                             {section.message}
                         </p>
                     </div>

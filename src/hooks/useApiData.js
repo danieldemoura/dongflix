@@ -3,19 +3,19 @@ import { useLocation } from "react-router-dom";
 import connectAPI from "../services/MyAPI";
 
 export default function useApiData() {
-    const [banner, setBanner] = useState([]);
+    const [data, setData] = useState([]);
     const { pathname } = useLocation();
     
     useEffect(() => {
         const endpoit = getEndPoint(pathname);
 
         connectAPI(endpoit).then(json => {
-            setBanner(json);
+            setData(json);
         })
         
-    },[pathname]);
+    },[]);
 
-    return [banner]
+    return [data]
 }
 
 function getEndPoint(pathname) {

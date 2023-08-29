@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import Menu from "../../components/Menu";
+import Carousel from "../../components/Carousel";
 
 export default function Home() {
     useEffect(() => { window.scrollTo(0, 0); },[]);
 
     return (
         <>
+            <Carousel />
         </>
     )
 }
