@@ -2,16 +2,20 @@
     font-size: 62.5%;
 
     --text-color: #FFFFFF;
-    --c-button-primary-background-color: #0042eb;
+    --color-primary: #0042eb;
+    --carousel-gap: 2rem;
+    --c-button-primary-background-color: var(--color-primary);
     --c-button-primary-hover-background-color: #0011ff;
     --c-button-primary-padding: 1.3rem 0rem;
     --c-button-secundary-background-color: rgba(242, 242, 242, 0.05);
     --c-button-secundary-hover-background-color: rgba(0, 0, 0, 0.411);
     --c-button-secundary-border-color: #FFFFFF;
+
     --c-menu-background-image: linear-gradient(to bottom, #0d0d0d 0%, #0d0d0d00 150%);
-    --c-menu-link-border-bottom-color: #0085FF;
+    --c-menu-link-border-bottom-color: var(--color-primary);
     --c-subscription-plans-background-color: #141414;
-    --footer-background-color: #0D0D0D;
+    --c-profile-background-color: rgb(32 96 74);
+    --c-footer-background-color: #0D0D0D;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
@@ -30,10 +34,6 @@
 }
 
 
-p, th, a, footer, button {
-    font-family: 'Poppins', sans-serif;
-}
-
 h1, h2 {
     font-family: 'Rowdies', cursive;
 }
@@ -41,7 +41,6 @@ h1, h2 {
 legend, label, p, span {
     font-family: 'Inter', sans-serif;
 }
-
 
 
 body {

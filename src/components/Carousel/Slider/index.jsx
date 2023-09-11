@@ -1,19 +1,20 @@
 import VideoCard from "../VideoCard";
 import styles from "./Slider.module.css";
 
-export default function Slider({ calculateSliderWidth, sliderRef, array }) {
+export default function Slider({ calculateImagesVisibles, sliderRef, donghuasRelease }) {
+    const releases = [...donghuasRelease].reverse();
 
     return (
-        array.map((donghua) => {
+        releases.map(release => {
             return (
                 <div className={styles.slider} 
-                    onLoad={calculateSliderWidth}
-                    key={donghua.id}
+                    onLoad={calculateImagesVisibles}
+                    key={`${release.id}`} 
                     ref={sliderRef} 
                 >
-                    <VideoCard donghua={donghua}/>
+                    <VideoCard donghua={release} episode={release.episode}/>
                 </div>
             )
         })
-    )
+    )  
 }

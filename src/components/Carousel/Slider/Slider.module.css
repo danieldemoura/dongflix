@@ -1,15 +1,14 @@
 .slider {
     width: 22rem;
-    height: 12rem;
+    height: fit-content;
     flex-shrink: 0;
     overflow: hidden;
-    border: 0.2rem solid #000;
 }
 
 @media screen and (min-width: 768px) {
 
     .slider {
         width: 30rem;
-        height: 17rem;
+        height: fit-content;
     }
 }

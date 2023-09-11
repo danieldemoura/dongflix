@@ -2,14 +2,14 @@ import {useState, useEffect} from "react";
 import { useLocation } from "react-router-dom";
 import connectAPI from "../services/MyAPI";
 
-export default function useApiData() {
+export default function useApiData(endpoint) {
     const [data, setData] = useState([]);
     const { pathname } = useLocation();
     
     useEffect(() => {
-        const endpoit = getEndPoint(pathname);
+        // const endpoit = getEndPoint(pathname);
 
-        connectAPI(endpoit).then(json => {
+        connectAPI(endpoint).then(json => {
             setData(json);
         })
         

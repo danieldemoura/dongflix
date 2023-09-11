@@ -6,7 +6,6 @@ export async function fetchData(data) {
         return value.email === data.email && value.password === data.password
     })
 
-    const statusCode = existUser.length > 0 ? 200 : 404;
 
-    return statusCode
+    return existUser
 }

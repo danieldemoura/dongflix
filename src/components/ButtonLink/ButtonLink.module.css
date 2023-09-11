@@ -4,7 +4,11 @@
     cursor: pointer;
     border: none;
 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+
     width: 100%;
     max-width: 32.0rem;
     text-decoration: none;

@@ -1,5 +1,61 @@
+.containerImg {
+    border: 0.2rem solid #000;
+    display: flex;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.containerImg:hover .thumbnail {
+    filter: blur(4px);
+    transform: scale(1.4);
+    transition: all .5s ease;
+}
+
+.containerImg:hover .imageSVG {
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.imageSVG {
+    width: 70px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
 .thumbnail {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.legend {
+    color: #FFF;
+    display: grid;
+    gap: 0.5rem;
+    background-color: #000000;
+    padding: 1.5rem 1rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.title, .episode {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.episode {
+    color: #ddd;
+    display: block;
+    font-size: 1.4rem;
 }

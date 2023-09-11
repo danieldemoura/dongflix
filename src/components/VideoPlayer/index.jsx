@@ -28,7 +28,7 @@ export default function VideoPlayer({ trailer }) {
           opts={opts}
           onReady={(event) => {
             setYouTubeAPI(event.target);
-            event.target.setPlaybackQuality("hd1080")
+            event.target.setPlaybackQuality("hd1080");
           }}
         />
     </div>

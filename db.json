@@ -5,56 +5,15 @@
       "avatar": "https://github.com/danieldemoura.png",
       "email": "naruto@mailna.co",
       "password": "1234",
+      "role": "admin",
       "id": 1
     },
     {
-      "name": "Mathes",
-      "avatar": "https://github.com/mathes.png",
-      "email": "sdasfsd@hfghfg",
-      "password": "0101",
-      "id": 2
-    },
-    {
-      "name": "Daniel De Moura",
-      "avatar": "https://github.com/danieldemoura.png",
-      "email": "f4de19f47a@mymaily.lol",
-      "password": "asdf",
-      "id": 3
-    },
-    {
-      "name": "Daniel De Moura",
-      "avatar": "https://github.com/danieldemoura.png",
-      "email": "sas@dgdfgdfgf",
-      "password": "aaaa",
-      "id": 4
-    },
-    {
-      "name": "animes",
-      "avatar": "https://github.com/animes.png",
-      "email": "f4de19f47a@mymaily.lol",
-      "password": "0000",
-      "id": 5
-    },
-    {
-      "name": "Daniel De Moura",
-      "avatar": "https://github.com/danieldemoura.png",
-      "email": "nazuyamikima@gmail.com",
+      "name": "Sasuke",
+      "avatar": "https://github.com/sasuke.png",
+      "email": "exemplo@gmail.com",
       "password": "1234",
-      "id": 6
-    },
-    {
-      "name": "naruto",
-      "avatar": "https://github.com/naruto.png",
-      "email": "sas@dgdfgdfgf",
-      "password": "0101",
-      "id": 7
-    },
-    {
-      "name": "Daniel De Moura",
-      "avatar": "https://github.com/danieldemoura.png",
-      "email": "naruto@mailna.co",
-      "password": "aaaa",
-      "id": 8
+      "id": 2
     }
   ],
   "advertisements": [
@@ -102,57 +61,291 @@
       "id": 0,
       "title": "The Island Of Siliang",
       "sinopse": "Desde a própria criação do universo, houve uma divisão entre os Deuses, os Imortais e os Humanos. Vivendo em tempos e espaços diferentes, cada uma das três raças recebeu papéis muito diferentes.",
-      "trailer": "ACAKCV1E1Wc",
-      "landscapePoster": "https://www.themoviedb.org/t/p/original/cArlsGwxqeYk6dK3tj6lte4DIuz.jpg",
-      "portraitPoster": ""
+      "trailer": "hhr9Q6bmQ_I",
+      "banner": "https://www.themoviedb.org/t/p/original/cArlsGwxqeYk6dK3tj6lte4DIuz.jpg",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sHRXSgjx42fOSYNh73LkuRpnL5p.jpg",
+      "status": "finalizado",
+      "release": "2020",
+      "genere": "cultivo",
+      "age": "",
+      "episodes": [
+        {
+          "number": 1,
+          "name": "Episódio 1",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/clxw1gqZpKHMXhG6Nsf0tKRAJKC.jpg"
+        },
+        {
+          "number": 2,
+          "name": "Episódio 2",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/8D5UXn4P1t6lxqySnqncbCfzEV7.jpg"
+        },
+        {
+          "number": 3,
+          "name": "Episódio 3",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/wQn6SntCeVuXQD6qi2NhzxZ3fjY.jpg"
+        },
+        {
+          "number": 4,
+          "name": "Episódio 4",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/7CKb0wXOHv5Unk1qfveh0vxNz3f.jpg"
+        },
+        {
+          "number": 5,
+          "name": "Episódio 5",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/5RWfS9wuFxjtw797hlRBmngTRsI.jpg"
+        },
+        {
+          "number": 6,
+          "name": "Episódio 6",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/xbaEn8xPq9TPlNM9MF9rWGaVUly.jpg"
+        },
+        {
+          "number": 7,
+          "name": "Episódio 7",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/9brG0GNGRXWogMIzQ688DrTWvPE.jpg"
+        },
+        {
+          "number": 8,
+          "name": "Episódio 8",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/yvG5LTu9Dy8Ls6Nx3LgZs1jPRpZ.jpg"
+        },
+        {
+          "number": 9,
+          "name": "Episódio 9",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/1AB8thdEdjCNah2mN1jfqkOaIl7.jpg"
+        },
+        {
+          "number": 10,
+          "name": "Episódio 10",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/zdfCwdY1jxmgSEXnORPXlI56F8r.jpg"
+        },
+        {
+          "number": 11,
+          "name": "Episódio 11",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/rPJCIxJCDb2AXhpeiwsnHk7lMtq.jpg"
+        },
+        {
+          "number": 12,
+          "name": "Episódio 12",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/9S3iAZUEK7vv9329V4QqbGzzUPn.jpg"
+        },
+        {
+          "number": 13,
+          "name": "Episódio 13",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/lBsKyzYl6DIaiSTTfTxJ6L1ZOG2.jpg"
+        },
+        {
+          "number": 14,
+          "name": "Episódio 14",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/aHK61wsg3PW85HtKKj8CC2IAMF7.jpg"
+        },
+        {
+          "number": 15,
+          "name": "Episódio 15",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/foFu8fC8oBUoEnATKZPL5hIcBhB.jpg"
+        }
+      ]
     },
     {
       "id": 1,
-      "title": "Villain Initialization",
-      "sinopse": "O vilão Ling Chen tem uma história de ódio e violência com o herói, Ye Zimu. Do nada, um reset fez com que Ling Chen voltasse para quando ele tinha 17 anos! Ele tem a chance de parar o herói em seu caminho, antes que Ye Zimu cresça e se torne seu pior inimigo...",
-      "trailer": "v38cltm",
-      "landscapePoster": "https://img.youtube.com/vi/9vrWDt5uvO0/maxresdefault.jpg",
-      "portraitPoster": ""
+      "title": "A Record of a Mortal’s Journey to Immortality",
+      "sinopse": "Um garoto pobre e comum de uma aldeia se junta a uma seita menor em Jiang Hu e se torna um discípulo não oficial por acaso. Como Han Li, um plebeu de nascimento, estabelecerá um ponto de apoio para si mesmo em sua seita? \n Com sua aptidão medíocre, ele deve atravessar com sucesso o caminho traiçoeiro do cultivo e evitar a observação daqueles que podem causar-lhe mal. Esta é a história de um mortal comum que, contra todas as probabilidades, colide com demônios diabólicos e celestiais antigos, a fim de encontrar seu próprio caminho para a imortalidade.",
+      "trailer": "ecd5Fqr3ksI",
+      "banner": "https://www.themoviedb.org/t/p/original/kWByUrGgS4mYyvQ2mG95gzblBOj.jpg",
+      "poster": "https://www.themoviedb.org/t/p/original/5IgZivKnBQOTwzKdjnhgTwVbJZ9.jpg",
+      "status": "em_estreia",
+      "release": "2020",
+      "genere": "cultivo",
+      "age": "",
+      "episodes": [
+        {
+          "number": 1,
+          "name": "1 - Homem comum",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/fLibDAIdigmVu0cxVHXA26LI3Vd.jpg"
+        },
+        {
+          "number": 2,
+          "name": "2 - Doutor Mo",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/oxiZ0LSoZrCGf7wYksJUNzrRWwn.jpg"
+        },
+        {
+          "number": 3,
+          "name": "3 - Frasco Jade Verde",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/4DgyReLiQg7CbdwvwCGxlvpsd0Y.jpg"
+        },
+        {
+          "number": 4,
+          "name": "4 - Anti-Matança",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/6UvZI322WT0X57u0uCiddzOKpES.jpg"
+        },
+        {
+          "number": 5,
+          "name": "5 - Os Seres Humanos são Possíveis",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/gxblKizYyQcM2xLJYMohGET0CIP.jpg"
+        },
+        {
+          "number": 6,
+          "name": "6 - O Mestre da Luz Dourada",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/mjLf7LcU1V3UOfeRlWswu35Ezuo.jpg"
+        },
+        {
+          "number": 7,
+          "name": "7 - Casamento Mofu",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/1NKfTncZnYHMawvNkT3t6A2TAEF.jpg"
+        },
+        {
+          "number": 8,
+          "name": "8 - Ir para casa",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/AlHglvZQMJq3yaZKJVJDURwCBs8.jpg"
+        },
+        {
+          "number": 9,
+          "name": "9 - Qualificações para a Conferência de Ascensão",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/4GEXKGKeRsZr0KXuHrhEYzZA1hU.jpg"
+        },
+        {
+          "number": 10,
+          "name": "10 - Pílula de Fundação",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/4TWrRNFXSBeYXDbRgXgB2Uec1qJ.jpg"
+        },
+        {
+          "number": 11,
+          "name": "11 - Perfumado",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/6pI2vBNrvWvreRDjTK1c1gJUxla.jpg"
+        },
+        {
+          "number": 12,
+          "name": "12 - Terra Proibida Sangrenta",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/b1uCZMMTuAdlfUN2TJMnKBEPFGw.jpg"
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "Ling Long: Incarnation",
-      "sinopse": "Em um futuro próximo, o mundo humano está superlotado, em uma ação urgente foi feita uma viajem pela galáxia, a procura de um novo lar. \n O avanço de tudo vai de maneira metódica de acordo com o passar do tempo, assim como as mudanças de fase da lua, durante décadas, o mundo sofre por destruições, extremas mudanças geológicas, e por fim não restou uma grande quantidade de humanos após essas catástrofes. Lentamente o mundo acalma-se e gradualmente é restaurado, pessoas nos escombros, e do fundo de abismos ressurgem nesta terra tão familiar e ao mesmo tempo estranha. Usando tudo para dominar e proclamar que ainda são os mestres deste mundo.",
-      "trailer": "v380c6t",
-      "landscapePoster": "https://www.themoviedb.org/t/p/original/k6Yg53yBdsfZeRLJh0WgrG2P11f.jpg",
-      "portraitPoster": ""
-    },
-    {
-      "id": 3,
-      "title": "A Record of a Mortal’s Journey to Immortality",
-      "sinopse": "Um garoto pobre e comum de uma aldeia se junta a uma seita menor em Jiang Hu e se torna um discípulo não oficial por acaso. Como Han Li, um plebeu de nascimento, estabelecerá um ponto de apoio para si mesmo em sua seita? \n Com sua aptidão medíocre, ele deve atravessar com sucesso o caminho traiçoeiro do cultivo e evitar a observação daqueles que podem causar-lhe mal. Esta é a história de um mortal comum que, contra todas as probabilidades, colide com demônios diabólicos e celestiais antigos, a fim de encontrar seu próprio caminho para a imortalidade.",
-      "trailer": "v38cs9s",
-      "landscapePoster": "https://www.themoviedb.org/t/p/original/kWByUrGgS4mYyvQ2mG95gzblBOj.jpg",
-      "portraitPoster": ""
-    },
-    {
-      "id": 4,
-      "title": "Nirvana of Storm Rider",
-      "sinopse": "O rugido do dragão nos nove céus traz uma mudança surpreendente, encontros entre vento e nuvens fazem o firmamento rir! \n Adaptado da clássica propriedade intelectual de Ma Rongcheng, 'Feng Yun', 'Feng Yun Bian' combina de forma brilhante o estilo nacional das artes marciais com a imaginação futurística da ficção científica, proporcionando a todos uma experiência emocionante para os olhos e os ouvidos!",
-      "trailer": "v37ywx6",
-      "landscapePoster": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx137649-eGZSHQTem0Md.png",
-      "portraitPoster": ""
-    },
-    {
-      "id": 5,
-      "title": "Ling Long: Incarnation 2",
-      "sinopse": "2ª Temporada de Ling Long, continuação de onde parou a primeira temporada.",
-      "trailer": "v38cqmp",
-      "landscapePoster": "https://www.themoviedb.org/t/p/original/zlVB0g4dLcXNVc0ShaVHaM0SjXf.jpg",
-      "portraitPoster": ""
-    },
-    {
-      "id": 6,
       "title": "Perfect World",
       "sinopse": "A animação “Perfect World” é adaptada do romance de mesmo nome [Perfect World]. \n Ele nasceu para cultivar o Tao, e para a catástrofe, ele se tornou uma chuva de bilhões de sangue, aspergida através dos anos eternos, experimentando o refinamento de incontáveis ​​tempo e espaço, e o batismo dos anos, ele se tornou eterno, ele se tornou em auto-existência. Veja como Shi Hao, o personagem principal, é extremamente brilhante em sua vida e cria lendas sem fim.",
       "trailer": "v37v32k",
-      "landscapePoster": "https://www.themoviedb.org/t/p/original/uF5PdoJj2ZVJOD8JbL0bfPhhwBr.jpg",
-      "portraitPoster": ""
+      "banner": "https://www.themoviedb.org/t/p/original/uF5PdoJj2ZVJOD8JbL0bfPhhwBr.jpg",
+      "poster": "https://www.themoviedb.org/t/p/original/3dEfwVZenAXUzuCltmKtq73VjtU.jpg",
+      "status": "em_estreia",
+      "release": "2021",
+      "genere": "cultivo",
+      "age": "",
+      "episodes": [
+        {
+          "id": 1,
+          "episodeNumber": 1,
+          "name": "Episódio 1",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/6KL4dECom48OEirizdc6LgIJbzA.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Doupo Cangqiong 5ª Temporada",
+      "sinopse": "Em uma terra onde não há magia, uma terra onde os fortes fazem as leis e os fraco tem que obedecer, uma terra cheia de tesouros fascinantes e de uma beleza indescritível, mas também preenchida com perigos inimagináveis. Xiao Yan, que mostrou ter um talento nunca antes visto em décadas, de repente perdeu tudo há três anos – seus poderes, sua reputação e a promessa com sua mãe. O que o levou a perder todos os seus poderes? E por que a sua noiva de repente apareceu?",
+      "trailer": "ACAKCV1E1Wc",
+      "banner": "https://www.themoviedb.org/t/p/original/pdT7nGf1zGiZHtVxl3Z4xq6l9T6.jpg",
+      "poster": "https://www.themoviedb.org/t/p/original/82uuDqkA2l2P5RKgijCi6KvvBiT.jpg",
+      "status": "em_estreia",
+      "release": "2023",
+      "genere": "cultivo",
+      "age": "",
+      "episodes": [
+        {
+          "number": 1,
+          "name": "Episódio 1",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/6dX5DNtkF2RfQNJRBJZSYPHoUht.jpg"
+        },
+        {
+          "number": 2,
+          "name": "Episódio 2",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/va0YGJyLF5rL7oDwdeesfxeIRTY.jpg"
+        },
+        {
+          "number": 3,
+          "name": "Episódio 3",
+          "videoURL": "",
+          "thumbnail": "https://www.themoviedb.org/t/p/original/wAuuymDCn9TISrbY7jvuLLLkQls.jpg"
+        }
+      ]
+    }
+  ],
+  "releases": [
+    {
+      "id": 1,
+      "donghua": "Perfect World",
+      "episode": {
+        "number": 1,
+        "name": "Episódio 1",
+        "thumbnail": "https://www.themoviedb.org/t/p/original/6KL4dECom48OEirizdc6LgIJbzA.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "donghua": "Doupo Cangqiong 5ª Temporada",
+      "episode": {
+        "number": 1,
+        "name": "Episódio 1",
+        "thumbnail": "https://www.themoviedb.org/t/p/original/6dX5DNtkF2RfQNJRBJZSYPHoUht.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "donghua": "Doupo Cangqiong 5ª Temporada",
+      "episode": {
+        "number": 2,
+        "name": "Episódio 2",
+        "thumbnail": "https://www.themoviedb.org/t/p/original/va0YGJyLF5rL7oDwdeesfxeIRTY.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "donghua": "A Record of a Mortal’s Journey to Immortality",
+      "episode": {
+        "number": 1,
+        "name": "1 - Homem comum",
+        "thumbnail": "https://www.themoviedb.org/t/p/original/fLibDAIdigmVu0cxVHXA26LI3Vd.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "donghua": "Doupo Cangqiong 5ª Temporada",
+      "episode": {
+        "number": 3,
+        "name": "Episódio 3",
+        "thumbnail": "https://www.themoviedb.org/t/p/original/wAuuymDCn9TISrbY7jvuLLLkQls.jpg"
+      }
     }
   ]
 }

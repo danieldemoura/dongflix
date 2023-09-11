@@ -1,4 +1,4 @@
-import { ReactComponent as ShowPassword} from "../../components/TextField/show-password.svg";
+import { ReactComponent as VisiblePassword} from "../../components/TextField/show-password.svg";
 import { ReactComponent as HiddenPassword} from "../../components/TextField/hidden-password.svg";
 import { fetchData } from "../../services/MyAPI/fetchData";
 import { useNavigate } from "react-router-dom";
@@ -9,23 +9,23 @@ import styles from "./Login.module.css";
 
 export default function Login() {
     const [showPassword, setShowPassword] = useState(false);
-    const navigate = useNavigate();
     const [data, setData] = useState({
         email: "",
         password: ""
     });
+    const navigate = useNavigate();
 
     function login(event) {
         event.preventDefault();
         
         fetchData(data)
-        .then(statusCode => {
-            if(statusCode === 200) {
+        .then(existUser => {
+            if (existUser && existUser.length !== 0) {
+                localStorage.setItem("isLogin", JSON.stringify(...existUser));
                 navigate("/home"); 
             } else {
                 alert("O usuário não existe, ou email e senha está incorreto");
             }
-
         });
     }
 
@@ -59,12 +59,12 @@ export default function Login() {
                         name="password"
                         value={data.password}
                         onChange={handleInputChange}
-                    >
-                        { showPassword 
-                            ? <ShowPassword onClick={displayPassword}/>
+                        logo={ 
+                            showPassword 
+                            ? <VisiblePassword onClick={displayPassword}/>
                             : <HiddenPassword style={{top: "28%"}} onClick={displayPassword}/> 
                         }
-                    </TextField>
+                    />
                     <ButtonLink typeStyle="primary" element="button">Entrar</ButtonLink>
                 </form>
             </div>

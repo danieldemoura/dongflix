@@ -8,8 +8,8 @@ import ButtonLink from "../ButtonLink";
 
 export default function HeadlineAnime() {
     const [youTube, setYouTubeAPI] = useState({});
-    const [anime] = useApiData();
-    const { title, sinopse, trailer } = anime.length > 0 ? anime[0] : []; 
+    const [anime] = useApiData("donghuas");
+    const { title, sinopse, trailer } = anime.length > 0 ? anime[3] : []; 
 
     return (
         <>

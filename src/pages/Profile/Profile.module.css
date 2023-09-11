@@ -1,0 +1,186 @@
+.article {
+    padding: 2rem 0rem;
+}
+
+.banner {
+    width: 100%;
+    height: 30rem;
+    background: url(https://i3.wp.com/donghuanosekai.com/wp-content/uploads/2021/09/Perfect-World-banner3-scaled.jpg) no-repeat center  top 20%/ cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+
+    padding: 1rem 0rem;
+    margin-top: -5rem;
+}
+
+.profile {
+    width: 32.8rem;
+    height: 40.2rem;
+    background-color: var(--c-profile-background-color);
+    border-radius: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.7rem;
+}
+
+.img {
+    border-radius: 50%;
+    border: 0.4rem solid #0D0D0D;
+    width: 19.2rem;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 1.5rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    color: #FFF;
+}
+
+.email {
+    color: #FFF;
+    font-size: 1.4rem;
+}
+
+.role {
+    display: flex;
+    justify-content: center;
+    width: calc(100% + 3.7rem);
+    margin-top: 3rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.5rem;
+
+    color: #FFF;
+    background-color: #0D0D0D;
+    border-radius: 1rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 84rem;
+    padding: 0rem 1.6rem;
+}
+
+.tabBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-color: var(--c-profile-background-color);
+    border-radius: 0.8rem 0.8rem 0rem 0rem;
+    overflow: hidden;
+}
+
+.info {
+    background-color: var(--color-primary);
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tab {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 7rem;
+    flex: 1;
+}
+
+.tab.active {
+    background-color: #0d4330;
+    font-weight: 600;
+}
+
+.tabContent {
+    background-color: #0D0D0D;
+
+    display: none;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 3.3rem;
+
+    padding: 5rem 0rem;
+    border-radius: 0rem 0rem 0.8rem 0.8rem;
+}
+
+.tabContent.active {
+    display: flex;
+}
+
+.cardDonghua {
+    width: 17.0rem;
+}
+
+.donghuaName {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    height: 3.4rem;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.cardPoster {
+    background-color: #000;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.posterImg {
+    width: 100%;
+    height: 25.5rem;
+    object-fit: cover;
+}
+
+
+.cardButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    background-color: var(--c-profile-background-color);
+    height: 3rem;
+    margin-top: -0.2rem;
+}
+
+.cardButtons a {
+    display: flex;
+    padding: 3px;
+}
+
+.cardButtons a:hover {
+    background-color: #0d4330;
+}
+
+.svg {
+    cursor: pointer;
+}

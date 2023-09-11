@@ -1,6 +1,11 @@
 .container {
     position: relative;
     width: 100%;
+    display: flex;
+}
+
+.container div {
+    flex: 1;
 }
 
 .input {
@@ -9,13 +14,14 @@
 
     color: #222222;
     border: .1rem solid #222222;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 2rem 1.5rem 1rem;
+    font-weight: 300;
 }
 
 
 .input:focus-within + .label, .input:valid + .label {
-    top: 10%;
+    top: 0.5rem;
     font-size: 1.2rem;
     transition: all .5s ease;
 }
@@ -31,7 +37,7 @@
 
 .label {
     position: absolute;
-    top: 31%;
+    top: 1.7rem;
     left: 1.5rem;
 
     color: #666;
@@ -44,6 +50,7 @@
     position: absolute;
     bottom: -1.6rem;
     left: 0rem;
+    white-space: nowrap;
 }
 
 .container svg {
@@ -51,4 +58,9 @@
     right: 1.5rem;
     top: 33%;
     cursor: pointer;
+}
+
+select {
+    appearance: none;
+    background: url(./arrowdown.svg) no-repeat center right 2rem;
 }

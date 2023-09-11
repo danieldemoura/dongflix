@@ -1,5 +1,5 @@
-import { ReactComponent as ShowPassword} from "../../components/TextField/show-password.svg";
-import { ReactComponent as HiddenPassword} from "../../components/TextField/hidden-password.svg";
+import { ReactComponent as ShowPassword } from "../../components/TextField/show-password.svg";
+import { ReactComponent as HiddenPassword } from "../../components/TextField/hidden-password.svg";
 import { registerUser } from "../../services/MyAPI/registerUser";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -19,7 +19,7 @@ export default function SignUp() {
 
     function signUpUser(event) {
         event.preventDefault();
-        localStorage.setItem("isLogin", JSON.stringify(userData.avatar));
+        localStorage.setItem("isLogin", JSON.stringify(userData));
         
         registerUser(userData).then(() => {
             navigate("/home");
@@ -80,12 +80,12 @@ export default function SignUp() {
                             name="password"
                             value={userData.password}
                             onChange={handleInputChange}
-                        >
-                            { showPassword 
+                            logo={ 
+                                showPassword 
                                 ? <ShowPassword onClick={displayPassword}/>
                                 : <HiddenPassword style={{top: "28%"}} onClick={displayPassword}/> 
                             }
-                        </TextField>
+                        />
                     </fieldset>
                     <ButtonLink typeStyle="primary" element="button">Finalizar Cadastro</ButtonLink>
                 </form>

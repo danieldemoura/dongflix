@@ -5,7 +5,7 @@ import styles from "./Headline.module.css"
 
 
 export default function Headline() {
-    const [banner] = useApiData();
+    const [banner] = useApiData("advertisements");
     const { title, message, slideShow } = banner.length > 0 ? banner.slice(0, 1)[0] : [];    
 
     return (

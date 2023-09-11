@@ -37,7 +37,8 @@
 
 .carouselSlider {
     display: flex;
-    gap: 2rem;
+    gap: var(--carousel-gap);
+    
     overflow-x: hidden;
     padding: 0rem 4.7rem 0rem 0rem;
     scroll-behavior: smooth;

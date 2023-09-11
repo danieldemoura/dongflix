@@ -3,7 +3,7 @@ import useApiData from "../../hooks/useApiData";
 import styles from "./Advertising.module.css"
 
 export default function Advertising() {
-    const [banner] = useApiData();
+    const [banner] = useApiData("advertisements");
     const advertisements = banner.slice(1);
 
     return (

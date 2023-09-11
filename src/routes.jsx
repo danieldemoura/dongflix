@@ -1,11 +1,13 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
 import PageDefault from "./pages/PageDefault"
 import Advertising from "./components/Advertising"
-import Home from "./pages/Home"
 import SignUp from "./pages/SignUp"
 import Login from "./pages/Login"
+import Home from "./pages/Home"
+import AddDonghua from "./pages/EditDonghua"
+import Profile from "./pages/Profile"
 
-function App() {
+function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
@@ -14,10 +16,13 @@ function App() {
               <Route path="sign-up" element={<SignUp />} />
               <Route path="login" element={<Login />} />
               <Route path="home" element={<Home />}/>
+              <Route path="add-donghua" element={<AddDonghua />}/>
+              <Route path="perfil" element={<Profile />} />
+              <Route path="editar-donghua/:name" element={<AddDonghua />} />
           </Route>
       </Routes>
     </BrowserRouter>
   )
 }
 
-export default App
+export default AppRoutes

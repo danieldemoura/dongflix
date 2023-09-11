@@ -2,16 +2,33 @@
     display: none;
 }
 
+.menu {
+    width: 100%;
+    height: 5.5rem;
+    position: absolute;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    gap: 13rem;
+    padding: 1rem 4rem;
+    backdrop-filter: blur(5px);
+}
+
+.menu.removeLinearGradient {
+    background-color: #0d0d0d;
+}
+
 .logo {
     display: block;
     position: absolute;
     z-index: 10;
-    top: 10px;
+    top: 7px;
     left: 10px;
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.6));
 }
 
-.menuDrop {
+.btnMenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,21 +38,19 @@
     height: 2rem;
     position: absolute;
     z-index: 999999;
-
-    margin: 1.5rem 0rem 0rem .8rem;
     cursor: pointer;
 }
 
 
-.menuDrop.open .menuBar:nth-child(1) {
+.btnMenu.open .menuBar:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
 }
   
-.menuDrop.open .menuBar:nth-child(2) {
+.btnMenu.open .menuBar:nth-child(2) {
     opacity: 0;
 }
   
-.menuDrop.open .menuBar:nth-child(3) {
+.btnMenu.open .menuBar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
@@ -76,6 +91,7 @@
 
     text-decoration: none;
     padding: .5rem 1rem;
+    height: 2.7rem;
 }
 
 .link:hover {
@@ -94,23 +110,12 @@
     gap: 1rem;
 
     padding: 1rem 2rem;
+    position: relative;
 }
 
-.containerIcons svg {
+.containerIcons > svg {
     width: 3rem;
     cursor: pointer;
-}
-
-
-.menu.removeShadow {
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-
-    display: flex;
-    gap: 13rem;
-    padding: 1rem 4rem;
-    background-image: linear-gradient(to bottom, #0d0d0d 0%, #191919 150%);
 }
 
 .removeShadow .isHidden {
@@ -124,6 +129,69 @@
     cursor: pointer;
 }
 
+.menuDropDowSVG {
+    width: 3rem;
+}
+
+.menuDropDow {
+    border-radius: 1rem;
+    list-style: none;
+    box-shadow: 0px 0px 1rem 0.3rem #3F3F3F;
+    background-color: #0d0d0d;
+    
+    position: absolute;
+    z-index: 10;
+    top: 95%;
+    right: 13px;
+    display: none;
+}
+
+.menuDropDow.isVisible {
+    display: block;
+}
+
+.menuDropDow::before {
+    content: "";
+    display: block;
+    top: -5px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #0d0d0d;
+
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.menuDropDowItem {
+    cursor: pointer;
+    line-height: 3rem;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #FFF;
+
+    width: 23rem;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menuDropDow  li:nth-child(1) .menuDropDowItem:hover {
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-color: #221f1f;
+}
+
+.menuDropDow  li:nth-child(2) .menuDropDowItem:hover {
+    border-radius: 0rem 0rem 1rem 1rem;
+    background-color: #221f1f;
+}
+
+
 @media screen and (min-width: 768px) {
 
     .isHidden {
@@ -132,28 +200,21 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
+    .menu {
+        background-image: var(--c-menu-background-image);
+        height: 7rem;
+    }
+
     .logo {
         display: block;
         position: initial;
     }
 
-    .menuDrop {
+    .btnMenu {
         margin: 1rem 0rem 0rem .8rem;
         display: none;
     } 
-    
-    .menu {
-        position: absolute;
-        z-index: 10;
-        width: 100%;
-        height: 6rem;
 
-        display: flex;
-        gap: 13rem;
-        padding: 1rem 4rem;
-        background-image: var(--c-menu-background-image);
-        backdrop-filter: blur(5px);
-    }
     
     .list {
         position: initial;
@@ -188,14 +249,15 @@
         gap: 3rem;
     }
 
-    .containerIcons svg {
+    .containerIcons > svg {
         width: initial;
+    }
+    
+    .menuDropDow::before {
+        right: 15px;
     }
 
     .avatar {
         width: 4.5rem;
     }
-
-
-    
 }
