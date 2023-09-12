@@ -32,6 +32,9 @@ export default function Home() {
                     <VideoPlayer trailer={trailer}/>
 
                     <Headline title={title} text={sinopse} styles={stylesHeadline}>
+                        <p className={stylesHeadline.description}>
+                            { sinopse }
+                        </p>
                         <ButttonWatch url={`/donghua/${title}`} />
                     </Headline>
 

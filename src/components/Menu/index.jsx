@@ -25,7 +25,7 @@ export default function Menu() {
 
     const { pathname } = useLocation();
     const isLogged = pathname === "/home" || pathname === "/perfil" || pathname.startsWith("/donghua/");
-    const removeLinearGradient = pathname !== "/home" && pathname !== "/" && pathname !== "/perfil";
+    const removeLinearGradient = pathname !== "/home" && pathname !== "/" && pathname !== "/perfil" && !pathname.startsWith("/donghua/");
     
     function toggleMenu() {
         setIsMenuOpen(!isMenuOpen)

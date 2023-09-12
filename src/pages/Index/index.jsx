@@ -16,6 +16,9 @@ export default function Index() {
         <>
             <Header>
                 <Headline title={title} text={message} styles={stylesHeadline}>
+                    <p className={stylesHeadline.description}>
+                        { message }
+                    </p>
                     <ButtonLink typeStyle="primary" url="sign-up">ASSINAR DONGFLIX</ButtonLink>
                     <ButtonLink url="login">JÁ SOU ASSINANTE</ButtonLink>
                 </Headline>

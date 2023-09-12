@@ -1,9 +1,10 @@
 import { DonghuasDataContext } from "../../contexts/DonghuasDataContext";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
 import Header from "../../components/Header";
 import Headline from "../../components/Headline";
-import styles from "../Home/HeadlineHome.module.css"
-import { useContext, useEffect, useState } from "react";
+import DonghuaDescription from "../../components/DonghuaDescription";
+import styles from "./Donghua.module.css";
 
 export default function Donghua() {
     const donghuasData = useContext(DonghuasDataContext);
@@ -22,7 +23,15 @@ export default function Donghua() {
 
     return (
         <Header>
-            <Headline title={donghua.title} text={donghua.sinopse} styles={styles} link={donghua.banner}/>
+            <Headline title={donghua.title} text={donghua.sinopse} styles={styles} link={donghua.banner}>
+                <DonghuaDescription 
+                    text={donghua.sinopse}
+                    release={donghua.release}
+                    genere={donghua.genere}
+                    age={donghua.age}
+                    status={donghua.status}
+                />
+            </Headline>
         </Header>
     )
 }
