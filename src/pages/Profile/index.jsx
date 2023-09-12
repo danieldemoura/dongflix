@@ -71,11 +71,13 @@ export default function Profile() {
                                             {donghua.title}
                                         </p>
                                         <div className={styles.cardPoster}>
-                                            <img 
-                                                className={styles.posterImg} 
-                                                src={donghua.poster}
-                                                alt={`Imagem do Donghua ${donghua.title}`} 
-                                            />
+                                            <Link to={`/donghua/${donghua.title}`} >
+                                                <img 
+                                                    className={styles.posterImg} 
+                                                    src={donghua.poster}
+                                                    alt={`Imagem do Donghua ${donghua.title}`} 
+                                                />
+                                            </Link>
                                             <div className={styles.cardButtons}>
                                                 <Link to={`/editar-donghua/${donghua.title}`}>
                                                     <Icon 

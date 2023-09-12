@@ -36,13 +36,6 @@
     -webkit-box-orient: vertical;
 }
 
-.boxButton {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    pointer-events: all;
-    height: 4rem;
-}
 
 @media screen and (min-width: 768px) {
 
@@ -81,9 +74,5 @@
 
     .description {
         font-size: 1.6rem;
-    }
-
-    .boxButton {
-        height: 5rem;
     }
 }
