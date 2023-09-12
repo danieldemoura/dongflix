@@ -24,7 +24,7 @@ export default function Menu() {
     const [showImage, setShowImage] = useState(urlImage);
 
     const { pathname } = useLocation();
-    const isLogged = pathname === "/home" || pathname === "/perfil";
+    const isLogged = pathname === "/home" || pathname === "/perfil" || pathname.startsWith("/donghua/");
     const removeLinearGradient = pathname !== "/home" && pathname !== "/" && pathname !== "/perfil";
     
     function toggleMenu() {

@@ -1,12 +1,12 @@
-import { useRef, useState } from "react";
+import { DonghuasDataContext } from "../../contexts/DonghuasDataContext";
+import { useContext, useRef, useState } from "react";
 import { Icon } from '@iconify/react';
 import { Link } from "react-router-dom";
-import useApiData from "../../hooks/useApiData";
 import styles from "./Profile.module.css";
 
 export default function Profile() {
     const dataLogin = JSON.parse(localStorage.getItem("isLogin"));
-    const [donghuas] = useApiData("donghuas");
+    const donghuasData = useContext(DonghuasDataContext);
     const [login, setLogin] = useState(dataLogin);
 
     const tabRefs = [useRef(), useRef()];
@@ -64,7 +64,7 @@ export default function Profile() {
                     </div>
                     <div className={`${styles.tabContent} ${styles.active}`} ref={tabContentRefs[1]}>
                         {
-                            donghuas.map(donghua => {
+                            donghuasData.map(donghua => {
                                 return (
                                     <div className={styles.cardDonghua} key={donghua.id}>
                                         <p className={styles.donghuaName}>

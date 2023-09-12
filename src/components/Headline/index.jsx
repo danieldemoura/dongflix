@@ -1,7 +1,7 @@
-export default function Headline({title, text, children, styles}) {
+export default function Headline({title, text, children, styles, link}) {
     return (
         <>
-            <div className={styles.headLine}>
+            <div className={styles.headLine} style={{backgroundImage: `url(${link})`}}>
                 <h1 className={styles.headlineTitle}>
                     { title }
                 </h1>
