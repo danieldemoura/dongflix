@@ -5,7 +5,6 @@ import Headline from "../../components/Headline";
 import ButtonLink from "../../components/ButtonLink";
 import SlideShow from "../../components/SlideShow";
 import styles from "./Index.module.css";
-import stylesHeadline from "./HeadlineIndex.module.css";
 
 export default function Index() {
     const [banner] = useApiData("advertisements");
@@ -15,8 +14,8 @@ export default function Index() {
     return (
         <>
             <Header>
-                <Headline title={title} text={message} styles={stylesHeadline}>
-                    <p className={stylesHeadline.description}>
+                <Headline title={title} text={message}>
+                    <p className={styles.description}>
                         { message }
                     </p>
                     <ButtonLink typeStyle="primary" url="sign-up">ASSINAR DONGFLIX</ButtonLink>

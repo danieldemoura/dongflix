@@ -61,7 +61,13 @@
       "id": 0,
       "title": "The Island Of Siliang",
       "sinopse": "Desde a própria criação do universo, houve uma divisão entre os Deuses, os Imortais e os Humanos. Vivendo em tempos e espaços diferentes, cada uma das três raças recebeu papéis muito diferentes.",
-      "trailer": "hhr9Q6bmQ_I",
+      "trailers": [
+          {
+            "url": "hhr9Q6bmQ_I",
+            "thumbnail": "https://www.themoviedb.org/t/p/original/nlHVzHPn6EwuMfVsi9YVw8c93au.jpg",
+            "season": "2ª Temporada - Trailer"
+          }
+      ],
       "banner": "https://www.themoviedb.org/t/p/original/cArlsGwxqeYk6dK3tj6lte4DIuz.jpg",
       "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sHRXSgjx42fOSYNh73LkuRpnL5p.jpg",
       "status": "Finalizado",
@@ -164,8 +170,19 @@
     {
       "id": 1,
       "title": "A Record of a Mortal’s Journey to Immortality",
-      "sinopse": "Um garoto pobre e comum de uma aldeia se junta a uma seita menor em Jiang Hu e se torna um discípulo não oficial por acaso. Como Han Li, um plebeu de nascimento, estabelecerá um ponto de apoio para si mesmo em sua seita? \n Com sua aptidão medíocre, ele deve atravessar com sucesso o caminho traiçoeiro do cultivo e evitar a observação daqueles que podem causar-lhe mal. Esta é a história de um mortal comum que, contra todas as probabilidades, colide com demônios diabólicos e celestiais antigos, a fim de encontrar seu próprio caminho para a imortalidade.",
-      "trailer": "ecd5Fqr3ksI",
+      "sinopse": "Um garoto pobre e comum de uma aldeia se junta a uma seita menor em Jiang Hu e se torna um discípulo não oficial por acaso. Como Han Li, um plebeu de nascimento, estabelecerá um ponto de apoio para si mesmo em sua seita?",
+      "trailers": [
+        {
+          "url": "ecd5Fqr3ksI",
+          "thumbnail": "https://s2.dmcdn.net/v/L23hB1PRtam5f6lI1/x1080",
+          "season": "1ª Temporada - Trailer"
+        },
+        {
+          "url": "QNdDFy_b9OA",
+          "thumbnail": "https://img.youtube.com/vi/QNdDFy_b9OA/mqdefault.jpg",
+          "season": "1ª Temporada REMAKE - Trailer"
+        }
+      ],
       "banner": "https://www.themoviedb.org/t/p/original/kWByUrGgS4mYyvQ2mG95gzblBOj.jpg",
       "poster": "https://www.themoviedb.org/t/p/original/5IgZivKnBQOTwzKdjnhgTwVbJZ9.jpg",
       "status": "Em lançamento",
@@ -251,7 +268,12 @@
       "id": 2,
       "title": "Perfect World",
       "sinopse": "A animação “Perfect World” é adaptada do romance de mesmo nome [Perfect World]. \n Ele nasceu para cultivar o Tao, e para a catástrofe, ele se tornou uma chuva de bilhões de sangue, aspergida através dos anos eternos, experimentando o refinamento de incontáveis ​​tempo e espaço, e o batismo dos anos, ele se tornou eterno, ele se tornou em auto-existência. Veja como Shi Hao, o personagem principal, é extremamente brilhante em sua vida e cria lendas sem fim.",
-      "trailer": "v37v32k",
+      "trailers": [
+        {
+          "url": "ecd5Fqr3ksI",
+          "thumbnail": ""
+        }
+      ],
       "banner": "https://www.themoviedb.org/t/p/original/uF5PdoJj2ZVJOD8JbL0bfPhhwBr.jpg",
       "poster": "https://www.themoviedb.org/t/p/original/3dEfwVZenAXUzuCltmKtq73VjtU.jpg",
       "status": "Em lançamento",
@@ -271,13 +293,19 @@
     {
       "id": 3,
       "title": "Doupo Cangqiong 5ª Temporada",
-      "sinopse": "Em uma terra onde não há magia, uma terra onde os fortes fazem as leis e os fraco tem que obedecer, uma terra cheia de tesouros fascinantes e de uma beleza indescritível, mas também preenchida com perigos inimagináveis. Xiao Yan, que mostrou ter um talento nunca antes visto em décadas, de repente perdeu tudo há três anos – seus poderes, sua reputação e a promessa com sua mãe. O que o levou a perder todos os seus poderes? E por que a sua noiva de repente apareceu?",
-      "trailer": "ACAKCV1E1Wc",
+      "sinopse": "Xiao Yan, que mostrou ter um talento nunca antes visto em décadas, de repente perdeu tudo há três anos, seus poderes, sua reputação e a promessa com sua mãe. \n O que o levou a perder todos os seus poderes? E por que a sua noiva de repente apareceu?",
+      "trailers": [
+          {
+            "url": "ACAKCV1E1Wc",
+            "thumbnail": "https://www.themoviedb.org/t/p/original/sDieyGF8Aos8FIhZjyDZAADN94m.jpg",
+            "season": "1ª Temporada - Trailer"
+          }
+      ],
       "banner": "https://www.themoviedb.org/t/p/original/pdT7nGf1zGiZHtVxl3Z4xq6l9T6.jpg",
       "poster": "https://www.themoviedb.org/t/p/original/82uuDqkA2l2P5RKgijCi6KvvBiT.jpg",
       "status": "Em lançamento",
       "release": "2023",
-      "genere": "cultivo",
+      "genere": "cultivo, artes marciais, ação",
       "age": "14",
       "episodes": [
         {

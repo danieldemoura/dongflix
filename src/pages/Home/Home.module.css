@@ -1,0 +1,15 @@
+.description {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin: 1.4rem 0rem;
+    
+    width: 100%;
+    max-width: 56rem;
+    white-space: pre-line;
+}
+
+@media screen and (min-width: 768px) {
+    .description {
+        font-size: 1.6rem;
+    }
+}

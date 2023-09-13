@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     gap: 13rem;
-    padding: 1rem 4rem;
+    padding: 1rem;
     backdrop-filter: blur(5px);
 }
 
@@ -203,6 +203,7 @@
     .menu {
         background-image: var(--c-menu-background-image);
         height: 7rem;
+        padding: 1rem 4rem;
     }
 
     .logo {

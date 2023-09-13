@@ -27,7 +27,8 @@
 .description {
     color: var(--text-color);
     font-size: 1.4rem;
-    max-width: 80%;
+    max-width: 100%;
+    margin-bottom: 1.4rem;
     white-space: pre-line;
 }
 

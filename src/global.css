@@ -2,6 +2,7 @@
     font-size: 62.5%;
 
     --text-color: #FFFFFF;
+    --body-background-color: #111111;
     --color-primary: #0042eb;
     --carousel-gap: 2rem;
     --c-button-primary-background-color: var(--color-primary);
@@ -11,7 +12,7 @@
     --c-button-secundary-hover-background-color: rgba(0, 0, 0, 0.411);
     --c-button-secundary-border-color: #FFFFFF;
 
-    --c-menu-background-image: linear-gradient(to bottom, #0d0d0d 0%, #0d0d0d00 150%);
+    --c-menu-background-image: linear-gradient(to bottom, rgba(13, 13, 13, 1) 0%, #0d0d0d00 150%);
     --c-menu-link-border-bottom-color: var(--color-primary);
     --c-subscription-plans-background-color: #141414;
     --c-profile-background-color: rgb(32 96 74);
@@ -42,8 +43,7 @@ legend, label, p, span {
     font-family: 'Inter', sans-serif;
 }
 
-
 body {
     scroll-behavior: smooth;
-    background-color: #111;
+    background-color: var(--body-background-color);
 }

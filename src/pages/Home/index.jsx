@@ -6,13 +6,13 @@ import Carousel from "../../components/Carousel";
 import Header from "../../components/Header";
 import VideoPlayer from "../../components/VideoPlayer";
 import Headline from "../../components/Headline";
-import stylesHeadline from "./HeadlineHome.module.css";
+import styles from "./Home.module.css";
 
 export default function Home() {
     const [youTube, setYouTubeAPI] = useState({});
     const [loadingData, setLoadingData] = useState({});
     const donghuasData = useContext(DonghuasDataContext);
-    const { title, sinopse, trailer } = loadingData;
+    const { title, sinopse, trailers } = loadingData;
 
     useEffect(() => {
         const selectedDonghua = donghuasData[3];
@@ -29,10 +29,11 @@ export default function Home() {
         <>
             <Header>
                 <YouTubeAPIContext.Provider value={{ youTube, setYouTubeAPI }}>
-                    <VideoPlayer trailer={trailer}/>
-
-                    <Headline title={title} text={sinopse} styles={stylesHeadline}>
-                        <p className={stylesHeadline.description}>
+                    { trailers !== undefined &&
+                        <VideoPlayer trailer={trailers[0].url}/>
+                    }
+                    <Headline title={title}>
+                        <p className={styles.description}>
                             { sinopse }
                         </p>
                         <ButttonWatch url={`/donghua/${title}`} />

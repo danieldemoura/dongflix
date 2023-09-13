@@ -1,7 +1,22 @@
 .container {
     display: flex;
     flex-direction: column;
+    gap: 1.4rem;
+}
+
+.wrapper {
+    padding: 1rem;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
+    height: 100%;
+}
+
+
+.title {
+    color: var(--text-color);
+    font-size: 2.8rem;
 }
 
 .releaseAndGenere {
@@ -28,14 +43,12 @@
     font-size: 1.4rem;
     color: var(--text-color);
 
-    max-width: 69rem;
-    max-height: 15rem;
+    max-width: 60rem;
     margin-bottom: 1.4rem;
     padding-right: 1rem;
     
     width: 100%;
     white-space: pre-line;
-    /* overflow: hidden; */
     text-overflow: ellipsis;
 
     display: -webkit-box;
@@ -45,6 +58,11 @@
 
 
 @media screen and (min-width: 768px) {
+
+    .wrapper {
+        height: fit-content;
+        background-color: transparent;
+    }
 
     .releaseAndGenere {
         font-size: 1.8rem;
@@ -56,5 +74,6 @@
 
     .description {
         font-size: 1.6rem;
+        max-height: 15rem;
     }
 }

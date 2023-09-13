@@ -26,7 +26,8 @@ export default function Menu() {
     const { pathname } = useLocation();
     const isLogged = pathname === "/home" || pathname === "/perfil" || pathname.startsWith("/donghua/");
     const removeLinearGradient = pathname !== "/home" && pathname !== "/" && pathname !== "/perfil" && !pathname.startsWith("/donghua/");
-    
+    const showLogo = pathname === "/home" || pathname === "/perfil" || pathname.startsWith("/donghua/");
+
     function toggleMenu() {
         setIsMenuOpen(!isMenuOpen)
     }
@@ -37,9 +38,9 @@ export default function Menu() {
 
     return (
         <nav className={`${styles.menu} ${removeLinearGradient ? styles.removeLinearGradient : ""}`}>
-            <Link to="/" className={`${pathname === "/home" || pathname === "/perfil" ? styles.isHidden : styles.logo}`} >
+            <Link to="/" className={`${showLogo ? styles.isHidden : styles.logo}`} >
                 <Logo />
-            </Link>
+            </Link>  
 
             {isLogged && 
                 <>
