@@ -30,7 +30,7 @@ export default function Home() {
             <Header>
                 <YouTubeAPIContext.Provider value={{ youTube, setYouTubeAPI }}>
                     { trailers !== undefined &&
-                        <VideoPlayer trailer={trailers[0].url}/>
+                        <VideoPlayer trailer={trailers[2].url}/>
                     }
                     <Headline title={title}>
                         <p className={styles.description}>

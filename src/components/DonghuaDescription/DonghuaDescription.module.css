@@ -43,7 +43,7 @@
     font-size: 1.4rem;
     color: var(--text-color);
 
-    max-width: 60rem;
+    max-width: 54rem;
     margin-bottom: 1.4rem;
     padding-right: 1rem;
     
@@ -65,11 +65,11 @@
     }
 
     .releaseAndGenere {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .status {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .description {

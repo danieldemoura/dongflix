@@ -74,96 +74,101 @@
       "release": "2020",
       "genere": "cultivo",
       "age": "14",
-      "episodes": [
+      "seasons": [
         {
-          "number": 1,
-          "name": "Episódio 1",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/clxw1gqZpKHMXhG6Nsf0tKRAJKC.jpg"
-        },
-        {
-          "number": 2,
-          "name": "Episódio 2",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/8D5UXn4P1t6lxqySnqncbCfzEV7.jpg"
-        },
-        {
-          "number": 3,
-          "name": "Episódio 3",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/wQn6SntCeVuXQD6qi2NhzxZ3fjY.jpg"
-        },
-        {
-          "number": 4,
-          "name": "Episódio 4",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/7CKb0wXOHv5Unk1qfveh0vxNz3f.jpg"
-        },
-        {
-          "number": 5,
-          "name": "Episódio 5",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/5RWfS9wuFxjtw797hlRBmngTRsI.jpg"
-        },
-        {
-          "number": 6,
-          "name": "Episódio 6",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/xbaEn8xPq9TPlNM9MF9rWGaVUly.jpg"
-        },
-        {
-          "number": 7,
-          "name": "Episódio 7",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/9brG0GNGRXWogMIzQ688DrTWvPE.jpg"
-        },
-        {
-          "number": 8,
-          "name": "Episódio 8",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/yvG5LTu9Dy8Ls6Nx3LgZs1jPRpZ.jpg"
-        },
-        {
-          "number": 9,
-          "name": "Episódio 9",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/1AB8thdEdjCNah2mN1jfqkOaIl7.jpg"
-        },
-        {
-          "number": 10,
-          "name": "Episódio 10",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/zdfCwdY1jxmgSEXnORPXlI56F8r.jpg"
-        },
-        {
-          "number": 11,
-          "name": "Episódio 11",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/rPJCIxJCDb2AXhpeiwsnHk7lMtq.jpg"
-        },
-        {
-          "number": 12,
-          "name": "Episódio 12",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/9S3iAZUEK7vv9329V4QqbGzzUPn.jpg"
-        },
-        {
-          "number": 13,
-          "name": "Episódio 13",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/lBsKyzYl6DIaiSTTfTxJ6L1ZOG2.jpg"
-        },
-        {
-          "number": 14,
-          "name": "Episódio 14",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/aHK61wsg3PW85HtKKj8CC2IAMF7.jpg"
-        },
-        {
-          "number": 15,
-          "name": "Episódio 15",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/foFu8fC8oBUoEnATKZPL5hIcBhB.jpg"
+          "season":"1ª Temporada",
+          "episodes": [
+            {
+              "number": 1,
+              "name": "Episódio 1",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/clxw1gqZpKHMXhG6Nsf0tKRAJKC.jpg"
+            },
+            {
+              "number": 2,
+              "name": "Episódio 2",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/8D5UXn4P1t6lxqySnqncbCfzEV7.jpg"
+            },
+            {
+              "number": 3,
+              "name": "Episódio 3",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/wQn6SntCeVuXQD6qi2NhzxZ3fjY.jpg"
+            },
+            {
+              "number": 4,
+              "name": "Episódio 4",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/7CKb0wXOHv5Unk1qfveh0vxNz3f.jpg"
+            },
+            {
+              "number": 5,
+              "name": "Episódio 5",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/5RWfS9wuFxjtw797hlRBmngTRsI.jpg"
+            },
+            {
+              "number": 6,
+              "name": "Episódio 6",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/xbaEn8xPq9TPlNM9MF9rWGaVUly.jpg"
+            },
+            {
+              "number": 7,
+              "name": "Episódio 7",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/9brG0GNGRXWogMIzQ688DrTWvPE.jpg"
+            },
+            {
+              "number": 8,
+              "name": "Episódio 8",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/yvG5LTu9Dy8Ls6Nx3LgZs1jPRpZ.jpg"
+            },
+            {
+              "number": 9,
+              "name": "Episódio 9",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/1AB8thdEdjCNah2mN1jfqkOaIl7.jpg"
+            },
+            {
+              "number": 10,
+              "name": "Episódio 10",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/zdfCwdY1jxmgSEXnORPXlI56F8r.jpg"
+            },
+            {
+              "number": 11,
+              "name": "Episódio 11",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/rPJCIxJCDb2AXhpeiwsnHk7lMtq.jpg"
+            },
+            {
+              "number": 12,
+              "name": "Episódio 12",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/9S3iAZUEK7vv9329V4QqbGzzUPn.jpg"
+            },
+            {
+              "number": 13,
+              "name": "Episódio 13",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/lBsKyzYl6DIaiSTTfTxJ6L1ZOG2.jpg"
+            },
+            {
+              "number": 14,
+              "name": "Episódio 14",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/aHK61wsg3PW85HtKKj8CC2IAMF7.jpg"
+            },
+            {
+              "number": 15,
+              "name": "Episódio 15",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/foFu8fC8oBUoEnATKZPL5hIcBhB.jpg"
+            }
+          ]
         }
       ]
     },
@@ -189,78 +194,83 @@
       "release": "2020",
       "genere": "cultivo",
       "age": "14",
-      "episodes": [
+      "seasons": [
         {
-          "number": 1,
-          "name": "1 - Homem comum",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/fLibDAIdigmVu0cxVHXA26LI3Vd.jpg"
-        },
-        {
-          "number": 2,
-          "name": "2 - Doutor Mo",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/oxiZ0LSoZrCGf7wYksJUNzrRWwn.jpg"
-        },
-        {
-          "number": 3,
-          "name": "3 - Frasco Jade Verde",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/4DgyReLiQg7CbdwvwCGxlvpsd0Y.jpg"
-        },
-        {
-          "number": 4,
-          "name": "4 - Anti-Matança",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/6UvZI322WT0X57u0uCiddzOKpES.jpg"
-        },
-        {
-          "number": 5,
-          "name": "5 - Os Seres Humanos são Possíveis",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/gxblKizYyQcM2xLJYMohGET0CIP.jpg"
-        },
-        {
-          "number": 6,
-          "name": "6 - O Mestre da Luz Dourada",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/mjLf7LcU1V3UOfeRlWswu35Ezuo.jpg"
-        },
-        {
-          "number": 7,
-          "name": "7 - Casamento Mofu",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/1NKfTncZnYHMawvNkT3t6A2TAEF.jpg"
-        },
-        {
-          "number": 8,
-          "name": "8 - Ir para casa",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/AlHglvZQMJq3yaZKJVJDURwCBs8.jpg"
-        },
-        {
-          "number": 9,
-          "name": "9 - Qualificações para a Conferência de Ascensão",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/4GEXKGKeRsZr0KXuHrhEYzZA1hU.jpg"
-        },
-        {
-          "number": 10,
-          "name": "10 - Pílula de Fundação",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/4TWrRNFXSBeYXDbRgXgB2Uec1qJ.jpg"
-        },
-        {
-          "number": 11,
-          "name": "11 - Perfumado",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/6pI2vBNrvWvreRDjTK1c1gJUxla.jpg"
-        },
-        {
-          "number": 12,
-          "name": "12 - Terra Proibida Sangrenta",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/b1uCZMMTuAdlfUN2TJMnKBEPFGw.jpg"
+          "season":"1ª Temporada",
+          "episodes": [
+            {
+              "number": 1,
+              "name": "1 - Homem comum",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/fLibDAIdigmVu0cxVHXA26LI3Vd.jpg"
+            },
+            {
+              "number": 2,
+              "name": "2 - Doutor Mo",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/oxiZ0LSoZrCGf7wYksJUNzrRWwn.jpg"
+            },
+            {
+              "number": 3,
+              "name": "3 - Frasco Jade Verde",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/4DgyReLiQg7CbdwvwCGxlvpsd0Y.jpg"
+            },
+            {
+              "number": 4,
+              "name": "4 - Anti-Matança",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/6UvZI322WT0X57u0uCiddzOKpES.jpg"
+            },
+            {
+              "number": 5,
+              "name": "5 - Os Seres Humanos são Possíveis",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/gxblKizYyQcM2xLJYMohGET0CIP.jpg"
+            },
+            {
+              "number": 6,
+              "name": "6 - O Mestre da Luz Dourada",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/mjLf7LcU1V3UOfeRlWswu35Ezuo.jpg"
+            },
+            {
+              "number": 7,
+              "name": "7 - Casamento Mofu",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/1NKfTncZnYHMawvNkT3t6A2TAEF.jpg"
+            },
+            {
+              "number": 8,
+              "name": "8 - Ir para casa",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/AlHglvZQMJq3yaZKJVJDURwCBs8.jpg"
+            },
+            {
+              "number": 9,
+              "name": "9 - Qualificações para a Conferência de Ascensão",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/4GEXKGKeRsZr0KXuHrhEYzZA1hU.jpg"
+            },
+            {
+              "number": 10,
+              "name": "10 - Pílula de Fundação",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/4TWrRNFXSBeYXDbRgXgB2Uec1qJ.jpg"
+            },
+            {
+              "number": 11,
+              "name": "11 - Perfumado",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/6pI2vBNrvWvreRDjTK1c1gJUxla.jpg"
+            },
+            {
+              "number": 12,
+              "name": "12 - Terra Proibida Sangrenta",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/b1uCZMMTuAdlfUN2TJMnKBEPFGw.jpg"
+            }
+          ]
         }
       ]
     },
@@ -292,39 +302,65 @@
     },
     {
       "id": 3,
-      "title": "Doupo Cangqiong 5ª Temporada",
-      "sinopse": "Xiao Yan, que mostrou ter um talento nunca antes visto em décadas, de repente perdeu tudo há três anos, seus poderes, sua reputação e a promessa com sua mãe. \n O que o levou a perder todos os seus poderes? E por que a sua noiva de repente apareceu?",
+      "title": "Doupo Cangqiong",
+      "sinopse": "Xiao Yan, que mostrou ter um talento nunca antes visto em décadas, de repente perdeu tudo há três anos, seus poderes, sua reputação e a promessa com sua mãe. \n O que o levou a perder todos os seus poderes? \nE por que a sua noiva de repente apareceu?",
       "trailers": [
+          {
+            "url": "EjLcQvhDiEs",
+            "thumbnail": "https://p9.toutiaoimg.com/origin/pgc-image/3d329376f9c94bcd97616003343abde5?",
+            "season": "Especial 3: Acordo dos 3 anos - Trailer"
+          },
           {
             "url": "ACAKCV1E1Wc",
             "thumbnail": "https://www.themoviedb.org/t/p/original/sDieyGF8Aos8FIhZjyDZAADN94m.jpg",
-            "season": "1ª Temporada - Trailer"
+            "season": "5ª Temporada - Trailer 2"
+          },
+          {
+            "url": "wnoqFV-9JuE",
+            "thumbnail": "https://www.themoviedb.org/t/p/original/t2G6gEufFlSxZrbstl1EGSCakSt.jpg",
+            "season": "5ª Temporada - Trailer 1"
           }
       ],
       "banner": "https://www.themoviedb.org/t/p/original/pdT7nGf1zGiZHtVxl3Z4xq6l9T6.jpg",
       "poster": "https://www.themoviedb.org/t/p/original/82uuDqkA2l2P5RKgijCi6KvvBiT.jpg",
       "status": "Em lançamento",
-      "release": "2023",
+      "release": "2017",
       "genere": "cultivo, artes marciais, ação",
       "age": "14",
-      "episodes": [
+      "seasons": [
         {
-          "number": 1,
-          "name": "Episódio 1",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/6dX5DNtkF2RfQNJRBJZSYPHoUht.jpg"
+          "season": "1ª Temporada",
+          "episodes": [
+            {
+              "number": 1,
+              "name": "Episódio 1",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/6dX5DNtkF2RfQNJRBJZSYPHoUht.jpg"
+            }
+          ]
         },
         {
-          "number": 2,
-          "name": "Episódio 2",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/va0YGJyLF5rL7oDwdeesfxeIRTY.jpg"
-        },
-        {
-          "number": 3,
-          "name": "Episódio 3",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/wAuuymDCn9TISrbY7jvuLLLkQls.jpg"
+          "season": "5ª Temporada",
+          "episodes": [
+            {
+              "number": 1,
+              "name": "Episódio 1",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/6dX5DNtkF2RfQNJRBJZSYPHoUht.jpg"
+            },
+            {
+              "number": 2,
+              "name": "Episódio 2",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/va0YGJyLF5rL7oDwdeesfxeIRTY.jpg"
+            },
+            {
+              "number": 3,
+              "name": "Episódio 3",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/wAuuymDCn9TISrbY7jvuLLLkQls.jpg"
+            }
+          ]
         }
       ]
     }

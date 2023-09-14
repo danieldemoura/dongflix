@@ -44,6 +44,7 @@ legend, label, p, span {
 }
 
 body {
+    /* --body-background-color: hsl(220 20% 10% / 1);  */
     scroll-behavior: smooth;
     background-color: var(--body-background-color);
 }
