@@ -73,7 +73,7 @@ export default function Donghua() {
                 </Headline>
             </Header>
             <section className={styles.sectionDetails}>
-                <h2 className={styles.title}>Mais Detalhes Sobre a Obra</h2>
+                <h2 className={styles.detailsTitle}>Mais Detalhes Sobre a Obra</h2>
                 <p className={styles.source}>{donghua.source}</p>
                 <div className={styles.detailsBox}>
                     <div className={styles.sinopse}>
@@ -135,7 +135,9 @@ export default function Donghua() {
                     }
                 </ol>
             </section>
-
+            <section className={styles.sectionRelated}>
+                <h2 className={styles.relatedTitle}>Donghuas Relacionados</h2>
+            </section>
             { donghua.trailers !== undefined &&
                 <dialog className={styles.modal} ref={dialogRef}>
                     <div className={styles.modalBox}>

@@ -1,4 +1,4 @@
-.title {
+.detailsTitle {
     font-family: "Inter", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
@@ -42,7 +42,8 @@
     max-width: 30rem;
 }
 
-.sectionTrailers, .sectionEpisodes {
+.sectionTrailers, 
+.sectionEpisodes {
     display: flex;
     flex-direction: column;
     padding: 1rem 1rem 0rem;
@@ -54,6 +55,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+}
+
+.relatedTitle {
+    font-size: 2.4rem;
+    font-family: "Inter", sans-serif;
 }
 
 .modal {
@@ -157,7 +163,10 @@
         padding: 2rem 0rem;
     }
 
-    .sectionDetails, .sectionTrailers, .sectionEpisodes {
+    .sectionDetails, 
+    .sectionTrailers, 
+    .sectionEpisodes,
+    .sectionRelated {
         padding: 5.5rem 4rem;
     }
         
@@ -194,7 +203,7 @@
 
 @media screen and (min-width: 1024px) {
 
-    .title {
+    .detailsTitle {
         font-size: 3.2rem;
     }
 
@@ -202,7 +211,10 @@
         gap: 9rem;
     }
 
-    .sectionDetails, .sectionTrailers, .sectionEpisodes {
+    .sectionDetails, 
+    .sectionTrailers, 
+    .sectionEpisodes,
+    .sectionRelated  {
         padding: 5.5rem 8rem;
     }
 
