@@ -29,7 +29,7 @@
 }
 
 .sinopse {
-    max-width: 55rem;
+    max-width: 70rem;
 }
 
 .sinopseTitle, .genereTitle {
@@ -172,7 +172,7 @@
     .sectionEpisodes,
     .sectionRelated,
     .sectionTrailers {
-        padding: 5.5rem 4rem;
+        padding: 5.5rem 4rem 2rem;
     }
         
     .sectionTrailers {
