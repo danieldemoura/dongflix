@@ -279,27 +279,40 @@
     {
       "id": 2,
       "title": "Perfect World",
-      "sinopse": "A animação “Perfect World” é adaptada do romance de mesmo nome [Perfect World]. \n Ele nasceu para cultivar o Tao, e para a catástrofe, ele se tornou uma chuva de bilhões de sangue, aspergida através dos anos eternos, experimentando o refinamento de incontáveis ​​tempo e espaço, e o batismo dos anos, ele se tornou eterno, ele se tornou em auto-existência. Veja como Shi Hao, o personagem principal, é extremamente brilhante em sua vida e cria lendas sem fim.",
+      "sinopse": "Ele nasceu para cultivar o Tao, e para a catástrofe, ele se tornou uma chuva de bilhões de sangue, aspergida através dos anos eternos, experimentando o refinamento de incontáveis tempo e espaço, e o batismo dos anos, ele se tornou eterno, ele se tornou em auto-existência. Veja como Shi Hao, o personagem principal, é extremamente brilhante em sua vida e cria lendas sem fim.",
       "trailers": [
         {
+          "id": 1,
           "url": "ecd5Fqr3ksI",
-          "thumbnail": ""
+          "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmU1M2VkN2EtMWY3NC00NjZjLTg4NDgtMmIzZDBiY2YwOTJlXkEyXkFqcGdeQXVyMTM1ODk0MjQ0._V1_.jpg",
+          "season": "1ª Temporada - Trailer"
+        },
+        {
+          "id": 2,
+          "url": "K1rOCk7iwDI",
+          "thumbnail": "https://img.youtube.com/vi/K1rOCk7iwDI/maxresdefault.jpg",
+          "season": "4ª Temporada - Trailer"
         }
       ],
-      "banner": "https://www.themoviedb.org/t/p/original/uF5PdoJj2ZVJOD8JbL0bfPhhwBr.jpg",
+      "banner": "https://www.surabayainside.com/wp-content/uploads/2022/11/maxresdefault.jpg",
       "poster": "https://www.themoviedb.org/t/p/original/3dEfwVZenAXUzuCltmKtq73VjtU.jpg",
       "status": "Em lançamento",
       "release": "2021",
-      "genere": "cultivo",
+      "genere": "ação, aventura, cultivo, fantasia",
       "age": "14",
-      "source": "",
-      "episodes": [
+      "source": "“Perfect World” é uma adaptadação de um romance Chinês de mesmo nome",
+      "seasons": [
         {
-          "id": 1,
-          "episodeNumber": 1,
-          "name": "Episódio 1",
-          "videoURL": "",
-          "thumbnail": "https://www.themoviedb.org/t/p/original/6KL4dECom48OEirizdc6LgIJbzA.jpg"
+          "season": "1ª Temporada",
+          "episodes": [
+            {
+              "id": 1,
+              "episodeNumber": 1,
+              "name": "Episódio 1",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/6KL4dECom48OEirizdc6LgIJbzA.jpg"
+            }
+          ]
         }
       ]
     },
