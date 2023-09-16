@@ -1,16 +1,52 @@
+.title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+
+    border-top: 0.1rem solid #222;
+    border-bottom: 0.1rem solid #222;
+    padding: 2rem 0rem;
+}
+
+.source {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 2rem 0rem;
+
+}
+
+.detailsBox {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 3rem;
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.sinopse {
+    max-width: 55rem;
+}
+
+.sinopseTitle, .genereTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.genere {
+    width: 100%;
+    max-width: 30rem;
+}
+
 .sectionTrailers, .sectionEpisodes {
     display: flex;
     flex-direction: column;
     padding: 1rem 1rem 0rem;
     gap: 1.6rem;
-}
-
-.sectionTitle {
-    color: var(--text-color);
-    font-family: "Inter", sans-serif;
-    font-size: 3.2rem;
-    font-weight: 700;
-    text-align: center;
 }
 
 .wrapperTrailers {
@@ -116,14 +152,15 @@
 
 @media screen and (min-width: 768px) {
 
-    .sectionTrailers, .sectionEpisodes {
+    .detailsBox {
+        font-size: 1.6rem;
+        padding: 2rem 0rem;
+    }
+
+    .sectionDetails, .sectionTrailers, .sectionEpisodes {
         padding: 5.5rem 4rem;
     }
-    
-    .sectionTitle {
-        text-align: initial;
-    }
-    
+        
     .wrapperTrailers {
         justify-content: initial;
         gap: 3rem;
@@ -157,7 +194,15 @@
 
 @media screen and (min-width: 1024px) {
 
-    .sectionTrailers, .sectionEpisodes {
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .detailsBox {
+        gap: 9rem;
+    }
+
+    .sectionDetails, .sectionTrailers, .sectionEpisodes {
         padding: 5.5rem 8rem;
     }
 

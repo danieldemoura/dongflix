@@ -72,6 +72,20 @@ export default function Donghua() {
                     }
                 </Headline>
             </Header>
+            <section className={styles.sectionDetails}>
+                <h2 className={styles.title}>Mais Detalhes Sobre a Obra</h2>
+                <p className={styles.source}>{donghua.source}</p>
+                <div className={styles.detailsBox}>
+                    <div className={styles.sinopse}>
+                        <span className={styles.sinopseTitle}>Sinopse</span>
+                        <p>{donghua.sinopse}</p>
+                    </div>
+                    <div className={styles.genere}>
+                        <span className={styles.genereTitle}>Gênero</span>
+                        <p>{donghua.genere}</p>
+                    </div>
+                </div>
+            </section>
             <section className={styles.sectionTrailers}>
                 <CarouselContextProvider showModal={showModal}>
                     <Carousel title="Trailers">
