@@ -283,12 +283,24 @@
       "trailers": [
         {
           "id": 1,
-          "url": "ecd5Fqr3ksI",
+          "url": "lnpKRSMMUVw",
           "thumbnail": "https://m.media-amazon.com/images/M/MV5BZmU1M2VkN2EtMWY3NC00NjZjLTg4NDgtMmIzZDBiY2YwOTJlXkEyXkFqcGdeQXVyMTM1ODk0MjQ0._V1_.jpg",
           "season": "1ª Temporada - Trailer"
         },
         {
           "id": 2,
+          "url": "P1Sv6KVm3Yg",
+          "thumbnail": "https://img.youtube.com/vi/P1Sv6KVm3Yg/maxresdefault.jpg",
+          "season": "1ª Temporada - Trailer 2"
+        },
+        {
+          "id": 3,
+          "url": "NBGGIzQ4024",
+          "thumbnail": "https://img.youtube.com/vi/U3mwKWFE7Bk/sddefault.jpg",
+          "season": "2ª Temporada - Trailer"
+        },
+        {
+          "id": 4,
           "url": "K1rOCk7iwDI",
           "thumbnail": "https://img.youtube.com/vi/K1rOCk7iwDI/maxresdefault.jpg",
           "season": "4ª Temporada - Trailer"
