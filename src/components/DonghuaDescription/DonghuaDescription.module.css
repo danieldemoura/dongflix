@@ -42,18 +42,16 @@
 .description {
     font-size: 1.4rem;
     color: var(--text-color);
-
-    max-width: 54rem;
-    margin-bottom: 1.4rem;
-    padding-right: 1rem;
     
-    width: 100%;
-    white-space: pre-line;
+    height: 8rem;
+    max-width: 50rem;
+    overflow: hidden;
+    white-space: break-spaces;
     text-overflow: ellipsis;
 
     display: -webkit-box;
-    /* -webkit-line-clamp: 6; Número de linhas que deseja mostrar */
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
 }
 
 
@@ -74,6 +72,5 @@
 
     .description {
         font-size: 1.6rem;
-        max-height: 15rem;
     }
 }
