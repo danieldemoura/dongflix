@@ -5,7 +5,14 @@
     
     width: 100%;
     max-width: 56rem;
-    white-space: pre-line;
+
+    white-space: break-spaces;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
 }
 
 .containerCarousel {

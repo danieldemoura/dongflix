@@ -23,12 +23,13 @@ export default function Home() {
     const [releases, setReleases] = useState([]);
     
     useEffect(() => {
-        const selectedDonghua = donghuasData[3];
+        const selectedDonghua = donghuasData[2];
 
         // Se não for undefined então adiciona o elemento no estado
         if (selectedDonghua) {
-          setLoadingData(donghuasData[3]);
-          setReleases([...array].reverse());
+            // Trailer de apresentação da página Home
+            setLoadingData(donghuasData[2]);
+            setReleases([...array].reverse());
         }
 
     }, [donghuasData, array]);
@@ -39,7 +40,7 @@ export default function Home() {
             <Header>
                 <YouTubeAPIContext.Provider value={{ youTube, setYouTubeAPI }}>
                     { trailers !== undefined &&
-                        <VideoPlayer trailer={trailers[2].url}/>
+                        <VideoPlayer trailer={trailers[1].url}/>
                     }
                     <Headline title={title}>
                         <p className={styles.description}>
