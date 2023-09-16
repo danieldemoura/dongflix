@@ -16,12 +16,24 @@ export default function Carousel({ title, children }) {
         carouselRef.current.scrollLeft += sliderWidth * imagesVisibles;
     }
 
-    useEffect(() => {
+    function showButtonsCarousel() {
         if (carouselRef.current.scrollWidth > carouselRef.current.clientWidth) {
             setCarouselOverflow(true);
+            
+        } else {
+            setCarouselOverflow(false);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", showButtonsCarousel);
+        showButtonsCarousel();
+        
+        return () => {
+            window.removeEventListener("resize", showButtonsCarousel);
         }
         
-    },[imagesVisibles])
+    },[sliderWidth])
 
     return (
         <section className={styles.carouselWrapper}>
