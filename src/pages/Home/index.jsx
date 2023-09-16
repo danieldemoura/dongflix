@@ -6,16 +6,21 @@ import Carousel from "../../components/Carousel";
 import Header from "../../components/Header";
 import VideoPlayer from "../../components/VideoPlayer";
 import Headline from "../../components/Headline";
-import styles from "./Home.module.css";
 // import useApiData from "../../hooks/useApiData";
 import Slider from "../../components/Carousel/Slider";
-import { CarouselContextProvider } from "../../contexts/CarouselContext";
+import { CarouselContext, CarouselContextProvider } from "../../contexts/CarouselContext";
+import CardThumbnail from "../../components/Carousel/CardThumbnail";
+import useApiData from "../../hooks/useApiData";
+import styles from "./Home.module.css";
 
 export default function Home() {
     const [youTube, setYouTubeAPI] = useState({});
     const [loadingData, setLoadingData] = useState({});
     const donghuasData = useContext(DonghuasDataContext);
     const { title, sinopse, trailers } = loadingData;
+
+    const [array] = useApiData("releases");
+    const [releases, setReleases] = useState([]);
     
     useEffect(() => {
         const selectedDonghua = donghuasData[3];
@@ -23,9 +28,10 @@ export default function Home() {
         // Se não for undefined então adiciona o elemento no estado
         if (selectedDonghua) {
           setLoadingData(donghuasData[3]);
+          setReleases([...array].reverse());
         }
 
-    }, [donghuasData]);
+    }, [donghuasData, array]);
       
 
     return (
@@ -43,11 +49,13 @@ export default function Home() {
                     </Headline>
                 </YouTubeAPIContext.Provider>
             </Header>
-            <CarouselContextProvider>
-                <Carousel title="Últimos lançamentos">
-                    <Slider />
-                </Carousel>
-            </CarouselContextProvider>
+            <div className={styles.containerCarousel}>
+                <CarouselContextProvider>
+                    <Carousel title="Últimos lançamentos">
+                        <Slider donghuas={releases}/>
+                    </Carousel>
+                </CarouselContextProvider>
+            </div>
         </>
     )
 }

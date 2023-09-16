@@ -1,4 +1,5 @@
 import { DonghuasDataContext } from "../../contexts/DonghuasDataContext";
+import { CarouselContextProvider } from "../../contexts/CarouselContext";
 import { useParams } from "react-router-dom";
 import { useContext, useEffect, useRef, useState } from "react";
 import { Icon } from '@iconify/react';
@@ -7,26 +8,37 @@ import Headline from "../../components/Headline";
 import DonghuaDescription from "../../components/DonghuaDescription";
 import YouTube from "react-youtube";
 import TextField from "../../components/TextField";
+import Carousel from "../../components/Carousel";
+import Slider from "../../components/Carousel/Slider";
+import useApiData from "../../hooks/useApiData";
 import styles from "./Donghua.module.css";
 
 export default function Donghua() {
     const donghuasData = useContext(DonghuasDataContext);
     const [video, setVideo] = useState();
-    const dialogRef = useRef();
-    const btnCloseRef = useRef();
     const [donghua, setDonghua] = useState({});
     const [option, setOption] = useState(0);
+    const dialogRef = useRef();
+    const btnCloseRef = useRef();
     const { name } = useParams();
+
+    const [donghuaTrailers] = useApiData(`donghuas?title=${name}`);
+    const [trailers, setTrailers] = useState([]);
+
 
     useEffect(() => {
         const donghuaFound = donghuasData.find(animation => animation.title === name);
-
+        
         // Se não for undefined adiciona o Donghua encontrado no estado
         if(donghuaFound) {
             setDonghua(donghuaFound);
         }
 
-    }, [donghuasData])
+        if(donghuaTrailers[0]) {
+            setTrailers(donghuaTrailers[0].trailers)
+        }
+
+    }, [donghuasData, donghuaTrailers])
 
     function closeModal() {
         document.body.style.overflow = "auto";
@@ -61,30 +73,11 @@ export default function Donghua() {
                 </Headline>
             </Header>
             <section className={styles.sectionTrailers}>
-                <h2 className={styles.sectionTitle}>Trailers</h2>
-                <div className={styles.wrapperTrailers}>                    
-                    {
-                        donghua.trailers !== undefined &&
-                        donghua.trailers.map(trailer => {                           
-                            return (
-                                <div className={styles.cardTrailer} key={trailer.url}>
-                                    <img className={styles.trailerThumbnail} 
-                                        src={trailer.thumbnail} 
-                                        alt=""
-                                        onClick={() => showModal(trailer.url)} 
-                                    />
-                                    <Icon className={styles.icon} 
-                                        icon="mdi:youtube"
-                                        color="red" 
-                                        width="100"
-                                        height="100" 
-                                    />
-                                    <span className={styles.trailerTitle}>{trailer.season}</span>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
+                <CarouselContextProvider showModal={showModal}>
+                    <Carousel title="Trailers">
+                        <Slider donghuas={trailers}/>
+                    </Carousel>
+                </CarouselContextProvider>
             </section>
             <section className={styles.sectionEpisodes}>
                 <TextField 
@@ -108,10 +101,10 @@ export default function Donghua() {
                     }
                 </TextField>
                 <ol className={styles.wrapperEpisodes}>
-                    { donghua.seasons !== undefined &&
+                    { donghua.seasons &&
                         donghua.seasons[option].episodes.map(episode => {
                             return (
-                                <li className={styles.listItem}>
+                                <li className={styles.listItem} key={episode.number}>
                                     <figure className={styles.episode}>
                                         <img 
                                             className={styles.episodeThumnail} 
@@ -128,6 +121,7 @@ export default function Donghua() {
                     }
                 </ol>
             </section>
+
             { donghua.trailers !== undefined &&
                 <dialog className={styles.modal} ref={dialogRef}>
                     <div className={styles.modalBox}>

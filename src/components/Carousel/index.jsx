@@ -1,13 +1,12 @@
 import { ReactComponent as ButtonLeft } from "../../assets/svg/left.svg";
 import { ReactComponent as ButtonRight } from "../../assets/svg/right.svg";
-import { useContext, useEffect, useRef, useState } from "react";
-// import useApiData from "../../hooks/useApiData";
-import styles from "./Carousel.module.css";
-// import Slider from "./Slider";
 import { CarouselContext } from "../../contexts/CarouselContext";
+import { useContext, useEffect, useState } from "react";
+import styles from "./Carousel.module.css";
 
 export default function Carousel({ title, children }) {
     const { sliderWidth, carouselRef, imagesVisibles } = useContext(CarouselContext);
+    const [carouselOverflow, setCarouselOverflow] = useState(false);
 
     function scrollCarouselLeft() {
         carouselRef.current.scrollLeft -= sliderWidth * imagesVisibles;
@@ -17,13 +16,24 @@ export default function Carousel({ title, children }) {
         carouselRef.current.scrollLeft += sliderWidth * imagesVisibles;
     }
 
+    useEffect(() => {
+        if (carouselRef.current.scrollWidth > carouselRef.current.clientWidth) {
+            setCarouselOverflow(true);
+        }
+        
+    },[imagesVisibles])
+
     return (
         <section className={styles.carouselWrapper}>
             <div className={styles.carouselHeader}>
                 <h2 className={styles.title}>{ title }</h2>
                 <div className={styles.boxButton}>
-                    <ButtonLeft onClick={scrollCarouselLeft}/>
-                    <ButtonRight onClick={scrollCarouselRight}/>
+                    { carouselOverflow &&
+                        <>
+                            <ButtonLeft onClick={scrollCarouselLeft}/>
+                            <ButtonRight onClick={scrollCarouselRight}/>
+                        </>
+                    }
                 </div>
             </div>
             <div className={styles.carouselSlider} ref={carouselRef}>

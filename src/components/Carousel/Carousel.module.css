@@ -1,7 +1,3 @@
-.carouselWrapper {
-    padding: 8rem 0rem 9rem 2rem;
-}
-
 .carouselHeader {
     display: flex;
     justify-content: space-between;
@@ -46,10 +42,6 @@
 
 
 @media screen and (min-width: 768px) {
-
-    .carouselWrapper {
-        padding: 4rem 0rem 9rem 5rem;
-    }
 
     .title {
         font-size: 2.4rem;

@@ -8,8 +8,17 @@
     white-space: pre-line;
 }
 
+.containerCarousel {
+    padding: 8rem 0rem 9rem 2rem;
+}
+
 @media screen and (min-width: 768px) {
+    
     .description {
         font-size: 1.6rem;
+    }
+
+    .containerCarousel {
+        padding: 4rem 0rem 9rem 5rem;
     }
 }

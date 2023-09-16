@@ -306,16 +306,19 @@
       "sinopse": "Xiao Yan, que mostrou ter um talento nunca antes visto em décadas, de repente perdeu tudo há três anos, seus poderes, sua reputação e a promessa com sua mãe. \n O que o levou a perder todos os seus poderes? \nE por que a sua noiva de repente apareceu?",
       "trailers": [
           {
+            "id": 1,
             "url": "EjLcQvhDiEs",
             "thumbnail": "https://p9.toutiaoimg.com/origin/pgc-image/3d329376f9c94bcd97616003343abde5?",
             "season": "Especial 3: Acordo dos 3 anos - Trailer"
           },
           {
+            "id": 2,
             "url": "ACAKCV1E1Wc",
             "thumbnail": "https://www.themoviedb.org/t/p/original/sDieyGF8Aos8FIhZjyDZAADN94m.jpg",
             "season": "5ª Temporada - Trailer 2"
           },
           {
+            "id": 3,
             "url": "wnoqFV-9JuE",
             "thumbnail": "https://www.themoviedb.org/t/p/original/t2G6gEufFlSxZrbstl1EGSCakSt.jpg",
             "season": "5ª Temporada - Trailer 1"
@@ -328,17 +331,6 @@
       "genere": "cultivo, artes marciais, ação",
       "age": "14",
       "seasons": [
-        {
-          "season": "1ª Temporada",
-          "episodes": [
-            {
-              "number": 1,
-              "name": "Episódio 1",
-              "videoURL": "",
-              "thumbnail": "https://www.themoviedb.org/t/p/original/6dX5DNtkF2RfQNJRBJZSYPHoUht.jpg"
-            }
-          ]
-        },
         {
           "season": "5ª Temporada",
           "episodes": [

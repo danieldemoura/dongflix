@@ -1,11 +1,13 @@
-import { useContext, useEffect } from "react";
-import VideoCard from "../VideoCard";
-import styles from "./Slider.module.css";
 import { CarouselContext } from "../../../contexts/CarouselContext";
+import { useContext, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { CardTrailer } from "../CardTrailer";
+import CardThumbnail from "../CardThumbnail";
+import styles from "./Slider.module.css";
 
-export default function Slider() {
-    const {setSliderWidth, setImagesVisibles, donghuas, sliderRef, carouselRef } = useContext(CarouselContext);
-    const releases = [...donghuas].reverse();
+export default function Slider({donghuas}) {
+    const {setSliderWidth, setImagesVisibles, sliderRef, carouselRef } = useContext(CarouselContext);
+    const { pathname } = useLocation();
 
     function calculateImagesVisibles() {
         if (sliderRef.current) {
@@ -33,14 +35,13 @@ export default function Slider() {
 
     
     return (
-        releases.map(release => {
+        donghuas.map(donghua => {
             return (
-                <div className={styles.slider} 
-                    onLoad={calculateImagesVisibles}
-                    key={`${release.id}`} 
-                    ref={sliderRef} 
-                >
-                    <VideoCard donghua={release} episode={release.episode}/>
+                <div className={styles.slider} onLoad={calculateImagesVisibles} key={`${donghua.id}`} ref={sliderRef}>
+                    {   pathname === "/home" ?
+                            <CardThumbnail donghua={donghua} episode={donghua.episode}/>
+                        :   <CardTrailer trailer={donghua}/>
+                    }       
                 </div>
             )
         })

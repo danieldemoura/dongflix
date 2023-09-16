@@ -1,14 +1,4 @@
 .slider {
-    width: 22rem;
-    height: fit-content;
     flex-shrink: 0;
     overflow: hidden;
-}
-
-@media screen and (min-width: 768px) {
-
-    .slider {
-        width: 30rem;
-        height: fit-content;
-    }
 }

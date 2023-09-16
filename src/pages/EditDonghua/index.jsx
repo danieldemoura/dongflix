@@ -166,9 +166,11 @@ export default function EditDonghua() {
                     <div className={styles.addEpisode}>
                         <span>Adicionar Episódio</span>
                     </div>
+                    {}                    
                     {
-                        donghuaData.episodes &&
-                        [...donghuaData.episodes].reverse().map(episode => {
+                        donghuaData.seasons &&
+                        // console.log(donghuaData.seasons[0].episodes)
+                        [...donghuaData.seasons[0].episodes].reverse().map(episode => {
                             return (
                                 <div className={styles.cardEpisode} key={episode.number}>
                                     <figure className={styles.figure}>

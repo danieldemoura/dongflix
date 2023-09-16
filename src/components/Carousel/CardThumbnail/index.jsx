@@ -1,9 +1,9 @@
-import styles from "./VideoCard.module.css";
 import { Icon } from '@iconify/react';
+import styles from "./CardThumbnail.module.css";
 
-export default function VideoCard({ donghua, episode }) {
+export default function CardThumbnail({ donghua, episode }) {
     return (
-        <figure>
+        <figure className={styles.figure}>
             <div className={styles.containerImg}>
                 <img className={styles.thumbnail} 
                     src={`${episode.thumbnail}`} alt={`Imagem do Donghua: ${donghua.title}`}

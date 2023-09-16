@@ -1,7 +1,6 @@
 import styles from "./DonghuaDescription.module.css";
 
 export default function DonghuaDescription({ text, release, genere, age, status, title, seasons }) {
-    console.log(seasons)
     const amountOfSeason = seasons.length === 1 ? "1 Temporada" : `${seasons.length} Temporadas`;
 
     return (

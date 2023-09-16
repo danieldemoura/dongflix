@@ -3,7 +3,7 @@ import useApiData from "../hooks/useApiData";
 
 export const CarouselContext = createContext({});
 
-export function CarouselContextProvider({ children }) {
+export function CarouselContextProvider({ children, showModal }) {
     /* Estados dos componentes Carousel e Slider */
     const [sliderWidth, setSliderWidth] = useState(0);
     const [imagesVisibles, setImagesVisibles] = useState(1);
@@ -21,7 +21,8 @@ export function CarouselContextProvider({ children }) {
             setImagesVisibles,
             donghuas, 
             sliderRef,
-            carouselRef
+            carouselRef,
+            showModal
         }}>
             { children }
         </CarouselContext.Provider>
