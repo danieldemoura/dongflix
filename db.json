@@ -74,6 +74,7 @@
       "release": "2020",
       "genere": "cultivo",
       "age": "14",
+      "source": "",
       "seasons": [
         {
           "season":"1ª Temporada",
@@ -194,6 +195,7 @@
       "release": "2020",
       "genere": "cultivo",
       "age": "14",
+      "source": "",
       "seasons": [
         {
           "season":"1ª Temporada",
@@ -290,6 +292,7 @@
       "release": "2021",
       "genere": "cultivo",
       "age": "14",
+      "source": "",
       "episodes": [
         {
           "id": 1,
@@ -303,7 +306,7 @@
     {
       "id": 3,
       "title": "Doupo Cangqiong",
-      "sinopse": "Xiao Yan, que mostrou ter um talento nunca antes visto em décadas, de repente perdeu tudo há três anos, seus poderes, sua reputação e a promessa com sua mãe. \n O que o levou a perder todos os seus poderes? \nE por que a sua noiva de repente apareceu?",
+      "sinopse": "Em uma terra onde não há magia, uma terra onde os fortes fazem as leis e os fraco tem que obedecer, uma terra cheia de tesouros fascinantes e de uma beleza indescritível, mas também preenchida com perigos inimagináveis. Xiao Yan, que mostrou ter um talento nunca antes visto em décadas, de repente perdeu tudo há três anos – seus poderes, sua reputação e a promessa com sua mãe. O que o levou a perder todos os seus poderes? E por que a sua noiva de repente apareceu?",
       "trailers": [
           {
             "id": 1,
@@ -330,6 +333,7 @@
       "release": "2017",
       "genere": "cultivo, artes marciais, ação",
       "age": "14",
+      "source": "Essa obra é adaptação da Web Novel Chinesa do escritor Tian Can Tudou.",
       "seasons": [
         {
           "season": "5ª Temporada",
