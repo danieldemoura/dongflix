@@ -43,11 +43,16 @@
 }
 
 .sectionTrailers, 
-.sectionEpisodes {
+.sectionEpisodes,
+.sectionRelated  {
     display: flex;
     flex-direction: column;
-    padding: 1rem 1rem 0rem;
+    padding: 1rem 2rem 0rem;
     gap: 1.6rem;
+}
+
+.sectionTrailers {
+    padding-right: 0rem;
 }
 
 .wrapperTrailers {
@@ -164,12 +169,16 @@
     }
 
     .sectionDetails, 
-    .sectionTrailers, 
     .sectionEpisodes,
-    .sectionRelated {
+    .sectionRelated,
+    .sectionTrailers {
         padding: 5.5rem 4rem;
     }
         
+    .sectionTrailers {
+        padding-right: 0rem;
+    }
+
     .wrapperTrailers {
         justify-content: initial;
         gap: 3rem;
@@ -211,11 +220,8 @@
         gap: 9rem;
     }
 
-    .sectionDetails, 
-    .sectionTrailers, 
-    .sectionEpisodes,
-    .sectionRelated  {
-        padding: 5.5rem 8rem;
+    .sectionTrailers {
+        padding-right: 0rem;
     }
 
     .wrapperEpisodes {
