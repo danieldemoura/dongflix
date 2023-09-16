@@ -34,7 +34,7 @@
 
 .headLine .wrapperHeadLine {
     background-color: var(--body-background-color);
-    padding: 2rem 1rem 0rem;
+    padding: 2rem;
 }
 
 .headlineTitle {
@@ -53,7 +53,7 @@
         z-index: 9999;
         padding: 7rem 0rem 0rem 4rem;
         justify-content: center;
-        background-position: top left 30rem;
+        background-position: top left 0rem;
     }
 
     .headLine.gradient::before, 
@@ -80,27 +80,14 @@
         background: linear-gradient(360deg, #111111 0, rgb(17 17 17 / 57%) 50%, rgba(32, 33, 37, 0) 80%)
     }
 
-
     /* Gradient da página /Donghua/:name  */
     .headLine.gradient2::after {
-        /* background: radial-gradient(circle at 88% 50%, rgba(17, 17, 17, 0) 50%, rgba(17, 17, 17, 0.9) 68%, rgba(17, 17, 17, 0.9) 60%, rgba(17, 17, 17, 1) 70%) */
-
-        background: linear-gradient(90deg,
-        hsl(0, 0%, 7%) 24%,hsla(0,0%,7%,.98) 25%,
-        hsla(0,0%,7%,.97) 26%,hsla(0,0%,7%,.95) 27%,
-        hsla(0,0%,7%,.94) 28%,hsla(0,0%,7%,.92) 29%,
-        hsla(0,0%,7%,.9) 30%,hsla(0,0%,7%,.87) 31%,
-        hsla(0,0%,7%,.82) 32%,hsla(0,0%,7%,.75) 33%,
-        hsla(0,0%,7%,.63) 34%,hsla(0,0%,7%,.45) 35%,
-        hsla(0,0%,7%,.27) 37%,hsla(0,0%,7%,.15) 38%,
-        hsla(0,0%,7%,.08) 39%,hsla(0,0%,7%,.03) 40%,
-        hsla(0,0%,7%,0));
+        background: radial-gradient(circle at 100% 50%, rgba(17, 17, 17, 0) 47%, rgba(17, 17, 17, 0.9) 70%, rgba(17, 17, 17, 0.9) 50%, rgba(17, 17, 17, 1) 75%);
     }
 
     .headLine.gradient2::before {
         background: linear-gradient(0deg,  hsl(0, 0%, 7%) 1%,hsla(0,0%,7%, 0) 18%);
     }
-
 
     .headLine .wrapperHeadLine {
         background-color: transparent;
@@ -113,5 +100,12 @@
 
     .description {
         font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .headLine {
+        background-position: top left 25rem;
     }
 }
