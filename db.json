@@ -318,8 +318,7 @@
           "season": "1ª Temporada",
           "episodes": [
             {
-              "id": 1,
-              "episodeNumber": 1,
+              "number": 1,
               "name": "Episódio 1",
               "videoURL": "",
               "thumbnail": "https://www.themoviedb.org/t/p/original/6KL4dECom48OEirizdc6LgIJbzA.jpg"
