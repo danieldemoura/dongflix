@@ -48,7 +48,7 @@
     font-size: 1.4rem;
     color: var(--text-color);
     
-    height: 8rem;
+    height: 8.5rem;
     max-width: 50rem;
     overflow: hidden;
     white-space: break-spaces;
@@ -77,5 +77,6 @@
 
     .description {
         font-size: 1.6rem;
+        height: 8rem;
     }
 }

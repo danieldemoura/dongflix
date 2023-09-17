@@ -63,6 +63,7 @@
       "sinopse": "Desde a própria criação do universo, houve uma divisão entre os Deuses, os Imortais e os Humanos. Vivendo em tempos e espaços diferentes, cada uma das três raças recebeu papéis muito diferentes.",
       "trailers": [
           {
+            "id": 1,
             "url": "hhr9Q6bmQ_I",
             "thumbnail": "https://www.themoviedb.org/t/p/original/nlHVzHPn6EwuMfVsi9YVw8c93au.jpg",
             "season": "2ª Temporada - Trailer"
@@ -72,7 +73,7 @@
       "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sHRXSgjx42fOSYNh73LkuRpnL5p.jpg",
       "status": "Finalizado",
       "release": "2020",
-      "genere": "cultivo",
+      "genres": "cultivo, fantasia, imortalidade, mistério, romance, 3D",
       "age": "14",
       "source": "",
       "seasons": [
@@ -178,12 +179,20 @@
       "title": "A Record of a Mortal’s Journey to Immortality",
       "sinopse": "Um garoto pobre e comum de uma aldeia se junta a uma seita menor em Jiang Hu e se torna um discípulo não oficial por acaso. Como Han Li, um plebeu de nascimento, estabelecerá um ponto de apoio para si mesmo em sua seita?",
       "trailers": [
-        {
+        { 
+          "id": 1,
           "url": "ecd5Fqr3ksI",
           "thumbnail": "https://s2.dmcdn.net/v/L23hB1PRtam5f6lI1/x1080",
           "season": "1ª Temporada - Trailer"
         },
-        {
+        { 
+          "id": 2,
+          "url": "eQyNIgNe-ec",
+          "thumbnail": "https://img.youtube.com/vi/eQyNIgNe-ec/maxresdefault.jpg",
+          "season": "1ª Temporada - Trailer 2"
+        },
+        { 
+          "id": 3,
           "url": "QNdDFy_b9OA",
           "thumbnail": "https://img.youtube.com/vi/QNdDFy_b9OA/mqdefault.jpg",
           "season": "1ª Temporada REMAKE - Trailer"
@@ -193,7 +202,7 @@
       "poster": "https://www.themoviedb.org/t/p/original/5IgZivKnBQOTwzKdjnhgTwVbJZ9.jpg",
       "status": "Em lançamento",
       "release": "2020",
-      "genere": "cultivo",
+      "genres": "ação, aventura, cultivo, fantasia, imortalidade, romance, wuxia, 3D",
       "age": "14",
       "source": "",
       "seasons": [
@@ -310,7 +319,7 @@
       "poster": "https://www.themoviedb.org/t/p/original/3dEfwVZenAXUzuCltmKtq73VjtU.jpg",
       "status": "Em lançamento",
       "release": "2021",
-      "genere": "ação, aventura, cultivo, fantasia",
+      "genres": "ação, aventura, cultivo, fantasia, 3D",
       "age": "14",
       "source": "“Perfect World” é uma adaptadação de um romance Chinês de mesmo nome",
       "seasons": [
@@ -355,7 +364,7 @@
       "poster": "https://www.themoviedb.org/t/p/original/82uuDqkA2l2P5RKgijCi6KvvBiT.jpg",
       "status": "Em lançamento",
       "release": "2017",
-      "genere": "cultivo, artes marciais, ação",
+      "genres": "cultivo, artes marciais, ação, 3D",
       "age": "14",
       "source": "Essa obra é adaptação da Web Novel Chinesa do escritor Tian Can Tudou.",
       "seasons": [

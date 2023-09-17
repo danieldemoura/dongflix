@@ -9,9 +9,9 @@
 
 .title {
     color: #FFF;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .boxButton {

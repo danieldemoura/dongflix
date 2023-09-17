@@ -32,7 +32,6 @@ export default function Slider({donghuas}) {
             window.removeEventListener("resize", calculateImagesVisibles);
         }
     }, [])
-
     
     return (
         donghuas.map(donghua => {
