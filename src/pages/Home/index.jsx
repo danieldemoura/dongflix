@@ -9,7 +9,7 @@ import Headline from "../../components/Headline";
 // import useApiData from "../../hooks/useApiData";
 import Slider from "../../components/Carousel/Slider";
 import { CarouselContext, CarouselContextProvider } from "../../contexts/CarouselContext";
-import CardThumbnail from "../../components/Carousel/CardThumbnail";
+// import CardThumbnail from "../../components/Carousel/CardThumbnail";
 import useApiData from "../../hooks/useApiData";
 import styles from "./Home.module.css";
 

@@ -2,6 +2,7 @@ import { DonghuasDataContext } from "../../contexts/DonghuasDataContext";
 import { CarouselContextProvider } from "../../contexts/CarouselContext";
 import { useParams } from "react-router-dom";
 import { useContext, useEffect, useRef, useState } from "react";
+import { CardEpisode } from "../../components/CardEpisode";
 import { Icon } from '@iconify/react';
 import Header from "../../components/Header";
 import Headline from "../../components/Headline";
@@ -118,18 +119,7 @@ export default function Donghua() {
                     { donghua.seasons &&
                         donghua.seasons[option].episodes.map(episode => {
                             return (
-                                <li className={styles.listItem} key={episode.name}>
-                                    <figure className={styles.episode}>
-                                        <img 
-                                            className={styles.episodeThumnail} 
-                                            src={episode.thumbnail} 
-                                            alt="" 
-                                            />
-                                        <figcaption>
-                                            <p className={styles.episodeTitle}>{episode.name}</p>
-                                        </figcaption>
-                                    </figure>
-                                </li>
+                                <CardEpisode episode={episode} key={episode.name}/>
                             )
                         })
                     }
