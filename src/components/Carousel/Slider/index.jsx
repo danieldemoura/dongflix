@@ -2,7 +2,7 @@ import { CarouselContext } from "../../../contexts/CarouselContext";
 import { useContext, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { CardTrailer } from "../CardTrailer";
-import CardThumbnail from "../CardThumbnail";
+import CardRelease from "../CardRelease";
 import styles from "./Slider.module.css";
 
 export default function Slider({donghuas}) {
@@ -39,8 +39,8 @@ export default function Slider({donghuas}) {
             return (
                 <div className={styles.slider} onLoad={calculateImagesVisibles} key={`${donghua.id}`} ref={sliderRef}>
                     {   pathname === "/home" ?
-                            <CardThumbnail donghua={donghua} episode={donghua.episode}/>
-                        :   <CardTrailer trailer={donghua}/>
+                            <CardRelease donghua={donghua} episode={donghua.episode}/>
+                        :   <CardTrailer trailer={donghua} />
                     }       
                 </div>
             )
