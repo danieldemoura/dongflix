@@ -118,7 +118,7 @@ export default function Donghua() {
                     { donghua.seasons &&
                         donghua.seasons[option].episodes.map(episode => {
                             return (
-                                <li className={styles.listItem} key={episode.number}>
+                                <li className={styles.listItem} key={episode.name}>
                                     <figure className={styles.episode}>
                                         <img 
                                             className={styles.episodeThumnail} 
