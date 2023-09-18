@@ -1,6 +1,6 @@
 import { DonghuasDataContext } from "../../contexts/DonghuasDataContext";
 import { CarouselContextProvider } from "../../contexts/CarouselContext";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { useContext, useEffect, useRef, useState } from "react";
 import { CardEpisode } from "../../components/CardEpisode";
 import { CardDonghua } from "../../components/CardDonghua";
@@ -25,8 +25,9 @@ export default function Donghua() {
     const { name } = useParams();
 
     const [donghuaTrailers] = useApiData(`donghuas?title=${name}`);
-    const [donghuasList] = useApiData("donghuas?_limit=10");
+    const [relatedDonghuas] = useApiData("donghuas?_limit=10");
     const [trailers, setTrailers] = useState([]);
+    const { pathname } = useLocation();
 
 
     useEffect(() => {
@@ -38,10 +39,10 @@ export default function Donghua() {
         }
 
         if(donghuaTrailers[0]) {
-            setTrailers(donghuaTrailers[0].trailers)
+            setTrailers(donghuaTrailers[0].trailers);
         }
 
-    }, [donghuasData, donghuaTrailers])
+    }, [donghuasData, donghuaTrailers, pathname])
 
 
     function closeModal() {
@@ -130,7 +131,7 @@ export default function Donghua() {
             </section>
             <section className={styles.sectionRelated}>
                 <h2 className={styles.relatedTitle}>Obras relacionadas</h2>
-                <CardDonghua donghuasList={donghuasList} currentDonghua={currentDonghua}/>
+                <CardDonghua donghuasList={relatedDonghuas} currentDonghua={currentDonghua}/>
             </section>
             {currentDonghua.trailers !== undefined &&
                 <dialog className={styles.modal} ref={dialogRef}>
