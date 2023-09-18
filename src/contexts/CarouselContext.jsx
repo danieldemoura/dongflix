@@ -12,7 +12,6 @@ export function CarouselContextProvider({ children, showModal }) {
     const sliderRef = useRef(null);
     const carouselRef = useRef(null);
 
-
     return (
         <CarouselContext.Provider value={{ 
             sliderWidth, 
