@@ -60,6 +60,7 @@
     {
       "id": 0,
       "title": "The Island Of Siliang",
+      "url": "the-island-of-siliang",
       "sinopse": "Desde a própria criação do universo, houve uma divisão entre os Deuses, os Imortais e os Humanos. Vivendo em tempos e espaços diferentes, cada uma das três raças recebeu papéis muito diferentes.",
       "trailers": [
           {
@@ -69,7 +70,7 @@
             "season": "2ª Temporada - Trailer"
           }
       ],
-      "banner": "https://www.themoviedb.org/t/p/original/cArlsGwxqeYk6dK3tj6lte4DIuz.jpg",
+      "banner": "https://www.themoviedb.org/t/p/original/zdfCwdY1jxmgSEXnORPXlI56F8r.jpg",
       "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sHRXSgjx42fOSYNh73LkuRpnL5p.jpg",
       "status": "Finalizado",
       "release": "2020",
@@ -177,6 +178,7 @@
     {
       "id": 1,
       "title": "A Record of a Mortal’s Journey to Immortality",
+      "url": "a-record-of-a-mortals-journey-to-imomortality",
       "sinopse": "Um garoto pobre e comum de uma aldeia se junta a uma seita menor em Jiang Hu e se torna um discípulo não oficial por acaso. Como Han Li, um plebeu de nascimento, estabelecerá um ponto de apoio para si mesmo em sua seita?",
       "trailers": [
         { 
@@ -288,6 +290,7 @@
     {
       "id": 2,
       "title": "Perfect World",
+      "url": "perfect-world",
       "sinopse": "Ele nasceu para cultivar o Tao, e para a catástrofe, ele se tornou uma chuva de bilhões de sangue, aspergida através dos anos eternos, experimentando o refinamento de incontáveis tempo e espaço, e o batismo dos anos, ele se tornou eterno, ele se tornou em auto-existência. Veja como Shi Hao, o personagem principal, é extremamente brilhante em sua vida e cria lendas sem fim.",
       "trailers": [
         {
@@ -339,6 +342,7 @@
     {
       "id": 3,
       "title": "Doupo Cangqiong",
+      "url": "doupo-cangqiong",
       "sinopse": "Em uma terra onde não há magia, uma terra onde os fortes fazem as leis e os fraco tem que obedecer, uma terra cheia de tesouros fascinantes e de uma beleza indescritível, mas também preenchida com perigos inimagináveis. Xiao Yan, que mostrou ter um talento nunca antes visto em décadas, de repente perdeu tudo há três anos – seus poderes, sua reputação e a promessa com sua mãe. O que o levou a perder todos os seus poderes? E por que a sua noiva de repente apareceu?",
       "trailers": [
           {
@@ -398,6 +402,7 @@
     {
       "id": 1,
       "donghua": "Perfect World",
+      "url": "episódio 1",
       "episode": {
         "number": 1,
         "name": "Episódio 1",
@@ -407,6 +412,7 @@
     {
       "id": 2,
       "donghua": "Doupo Cangqiong 5ª Temporada",
+      "url": "episódio 1",
       "episode": {
         "number": 1,
         "name": "Episódio 1",
@@ -416,6 +422,7 @@
     {
       "id": 3,
       "donghua": "Doupo Cangqiong 5ª Temporada",
+      "url": "episódio 1",
       "episode": {
         "number": 2,
         "name": "Episódio 2",
@@ -425,6 +432,7 @@
     {
       "id": 4,
       "donghua": "A Record of a Mortal’s Journey to Immortality",
+      "url": "episódio 1",
       "episode": {
         "number": 1,
         "name": "1 - Homem comum",
@@ -434,6 +442,7 @@
     {
       "id": 5,
       "donghua": "Doupo Cangqiong 5ª Temporada",
+      "url": "episódio 1",
       "episode": {
         "number": 3,
         "name": "Episódio 3",
