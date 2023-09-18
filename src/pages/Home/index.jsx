@@ -19,9 +19,13 @@ export default function Home() {
     const donghuasData = useContext(DonghuasDataContext);
     const { title, sinopse, trailers } = loadingData;
 
-    const [array] = useApiData("releases");
-    const [releases, setReleases] = useState([]);
-    
+    const [episodes] = useApiData("releases");
+    const [carouselList, setCarouselList] = useState([]);
+    const [carouselsTitles, setCarouselsTitles] = useState([
+        "Últimos lançamentos",
+        "Donghuas",
+    ])
+
     useEffect(() => {
         const selectedDonghua = donghuasData[2];
 
@@ -29,10 +33,10 @@ export default function Home() {
         if (selectedDonghua) {
             // Trailer de apresentação da página Home
             setLoadingData(donghuasData[2]);
-            setReleases([...array].reverse());
+            setCarouselList([episodes.reverse(), donghuasData]);
         }
 
-    }, [donghuasData, array]);
+    }, [donghuasData, episodes]);
       
 
     return (
@@ -40,7 +44,7 @@ export default function Home() {
             <Header>
                 <YouTubeAPIContext.Provider value={{ youTube, setYouTubeAPI }}>
                     { trailers !== undefined &&
-                        <VideoPlayer trailer={trailers[1].url}/>
+                        <VideoPlayer trailer={trailers[3].url}/>
                     }
                     <Headline title={title}>
                         <p className={styles.description}>
@@ -51,11 +55,17 @@ export default function Home() {
                 </YouTubeAPIContext.Provider>
             </Header>
             <div className={styles.containerCarousel}>
-                <CarouselContextProvider>
-                    <Carousel title="Últimos lançamentos">
-                        <Slider donghuas={releases}/>
-                    </Carousel>
-                </CarouselContextProvider>
+                {carouselList[0] &&
+                    carouselList.map((list, index) => {
+                        return (
+                            <CarouselContextProvider key={index}>
+                                <Carousel title={carouselsTitles[index]} carouselList={carouselList}>
+                                    <Slider donghuas={list}/>
+                                </Carousel>
+                            </CarouselContextProvider>
+                        )
+                    })
+                }
             </div>
         </>
     )
