@@ -4,7 +4,7 @@ import { CarouselContext } from "../../contexts/CarouselContext";
 import { useContext, useEffect, useState } from "react";
 import styles from "./Carousel.module.css";
 
-export default function Carousel({ title, children }) {
+export default function Carousel({title, children}) {
     const { sliderWidth, carouselRef, imagesVisibles } = useContext(CarouselContext);
     const [carouselOverflow, setCarouselOverflow] = useState(false);
 
@@ -19,7 +19,6 @@ export default function Carousel({ title, children }) {
     function showButtonsCarousel() {
         if (carouselRef.current.scrollWidth > carouselRef.current.clientWidth) {
             setCarouselOverflow(true);
-            
         } else {
             setCarouselOverflow(false);
         }
@@ -28,17 +27,17 @@ export default function Carousel({ title, children }) {
     useEffect(() => {
         window.addEventListener("resize", showButtonsCarousel);
         showButtonsCarousel();
-        
+
         return () => {
             window.removeEventListener("resize", showButtonsCarousel);
         }
         
-    },[sliderWidth])
+    }, [sliderWidth])
 
     return (
         <section className={styles.carouselWrapper}>
             <div className={styles.carouselHeader}>
-                <h2 className={styles.title}>{ title }</h2>
+                <h2 className={styles.title}>{title}</h2>
                 <div className={styles.boxButton}>
                     { carouselOverflow &&
                         <>

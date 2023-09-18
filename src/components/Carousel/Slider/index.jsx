@@ -32,14 +32,15 @@ export default function Slider({donghuas}) {
             window.removeEventListener("resize", calculateImagesVisibles);
         }
     }, [])
+
     
     return (
         donghuas.map(donghua => {
             return (
                 <div className={styles.slider} onLoad={calculateImagesVisibles} key={`${donghua.id}`} ref={sliderRef}>
-                    {   pathname === "/home" ?
-                            <CardRelease donghua={donghua} episode={donghua.episode}/>
-                        :   <CardTrailer trailer={donghua} />
+                    {   pathname === "/home" 
+                        ? <CardRelease donghua={donghua} />
+                        : <CardTrailer trailer={donghua} />
                     }       
                 </div>
             )

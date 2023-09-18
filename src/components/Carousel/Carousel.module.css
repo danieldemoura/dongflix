@@ -1,3 +1,7 @@
+.carouselWrapper {
+    padding-bottom: 9rem;
+}
+
 .carouselHeader {
     display: flex;
     justify-content: space-between;
