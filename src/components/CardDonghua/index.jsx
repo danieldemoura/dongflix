@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./CardDonghua.module.css";
+import { Link } from "react-router-dom";
 
 export function CardDonghua({donghuasList, currentDonghua}) {
     const [currentGenre, setCurrentGenre] = useState();
@@ -28,20 +29,23 @@ export function CardDonghua({donghuasList, currentDonghua}) {
 
     }, [currentDonghua])
 
+
     useEffect(() => {
         getRelatedDonghuas();
 
     },[donghuasList, updateComponent])
     
-
+    git
     return (
         <ul className={styles.relatedDonghuas}>
             {relatedDonghuas.length > 0 &&
                 relatedDonghuas.slice(0, 6).map(donghua => {
                     return (
-                            <li className={styles.item} key={donghua.id}>
+                        <Link to={`/donghua/${donghua.title}`} key={donghua.id}>
+                            <li className={styles.item}>
                                 <img className={styles.thumbnail} src={donghua.banner} />
                             </li>
+                        </Link>
                         )
                     })
             }
