@@ -31,6 +31,13 @@
     width: 40rem;
 }
 
+.wrapperStatus {
+    display: flex;
+    gap: 3.6rem;
+    align-items: center;
+    line-height: 3.8rem;
+}
+
 .status {
     width: fit-content;
     line-height: 3rem;
@@ -41,6 +48,11 @@
     font-size: 1.4rem;
     font-weight: 600;
     padding: 0.4rem 1.6rem 0.4rem;
+}
+
+.favorite {
+    cursor: pointer;
+    width: 3.2rem;
 }
 
 
