@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Menu from "../../components/Menu";
 import Footer from "../../components/Footer";
 import { DonghuasDataProvider } from "../../contexts/DonghuasDataContext";
+import { FavoriteContextProvider } from "../../contexts/FavoriteContext";
 
 export default function PageDefault() {
     const { pathname } = useLocation();
@@ -15,9 +16,11 @@ export default function PageDefault() {
         <>
             <DonghuasDataProvider>
                 <Menu />
-                <main>
-                    <Outlet />
-                </main>
+                <FavoriteContextProvider>
+                    <main>
+                        <Outlet />
+                    </main>
+                </FavoriteContextProvider>
                 <Footer />
             </DonghuasDataProvider>
         </>
