@@ -35,7 +35,7 @@ export function CardDonghua({donghuasList, currentDonghua}) {
 
     },[donghuasList, updateComponent])
     
-    git
+    
     return (
         <ul className={styles.relatedDonghuas}>
             {relatedDonghuas.length > 0 &&
