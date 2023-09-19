@@ -1,15 +1,13 @@
 import { YouTubeAPIContext } from "../../contexts/YouTubeAPIContext";
 import { ButttonWatch } from "../../components/ButtonWatch";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { CarouselContextProvider } from "../../contexts/CarouselContext";
 import { DonghuasDataContext } from "../../contexts/DonghuasDataContext";
 import Carousel from "../../components/Carousel";
 import Header from "../../components/Header";
 import VideoPlayer from "../../components/VideoPlayer";
 import Headline from "../../components/Headline";
-// import useApiData from "../../hooks/useApiData";
 import Slider from "../../components/Carousel/Slider";
-import { CarouselContext, CarouselContextProvider } from "../../contexts/CarouselContext";
-// import CardThumbnail from "../../components/Carousel/CardThumbnail";
 import useApiData from "../../hooks/useApiData";
 import styles from "./Home.module.css";
 
