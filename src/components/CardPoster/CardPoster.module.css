@@ -1,0 +1,57 @@
+
+.cardDonghua {
+    width: 17.0rem;
+}
+
+.donghuaName {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    height: 3.4rem;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.cardPoster {
+    background-color: #000;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.posterImg {
+    width: 100%;
+    height: 25.5rem;
+    object-fit: cover;
+}
+
+
+.cardButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    background-color: var(--c-profile-background-color);
+    height: 3rem;
+    margin-top: -0.2rem;
+}
+
+.cardButtons a {
+    display: flex;
+    padding: 3px;
+}
+
+.cardButtons a:hover {
+    background-color: #0d4330;
+}
+
+.svg {
+    cursor: pointer;
+}
