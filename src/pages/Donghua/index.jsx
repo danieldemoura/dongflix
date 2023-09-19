@@ -131,7 +131,7 @@ export default function Donghua() {
             </section>
             <section className={styles.sectionRelated}>
                 <h2 className={styles.relatedTitle}>Obras relacionadas</h2>
-                <CardDonghua donghuasList={relatedDonghuas} currentDonghua={currentDonghua}/>
+                <CardDonghua donghuasList={relatedDonghuas} currentDonghua={currentDonghua}/>            
             </section>
             {currentDonghua.trailers !== undefined &&
                 <dialog className={styles.modal} ref={dialogRef}>
