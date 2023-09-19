@@ -1,14 +1,15 @@
 import { DonghuasDataContext } from "../../contexts/DonghuasDataContext";
 import { useContext, useRef, useState } from "react";
-import { Icon } from '@iconify/react';
-import { Link } from "react-router-dom";
+import { FavoriteContext } from "../../contexts/FavoriteContext";
+import CardPoster from "../../components/CardPoster";
 import styles from "./Profile.module.css";
 
 export default function Profile() {
     const dataLogin = JSON.parse(localStorage.getItem("isLogin"));
     const donghuasData = useContext(DonghuasDataContext);
+    const {favoriteList} = useContext(FavoriteContext);
     const [login, setLogin] = useState(dataLogin);
-
+ 
     const tabRefs = [useRef(), useRef()];
     const tabContentRefs = [useRef(), useRef()];
     const [indexInfo, setIndexInfo] = useState(1);
@@ -28,7 +29,10 @@ export default function Profile() {
         setIndexInfo(indexTab);
     }
 
-    
+    const favoriteDonghuas = donghuasData.filter(donghua => {
+        return favoriteList.includes(donghua.title)
+   })
+
     return (
         <article className={styles.article}>
             <div className={styles.banner}></div>
@@ -60,42 +64,17 @@ export default function Profile() {
                     </header>
                     <p className={styles.info}>{ info[indexInfo] }</p>
                     <div className={styles.tabContent} ref={tabContentRefs[0]}>
-                        oigndofgodjt
+                        {
+                            favoriteDonghuas.map(donghua => {
+                                return <CardPoster donghua={donghua} key={donghua.id}/>
+                            })
+                        }
                     </div>
                     <div className={`${styles.tabContent} ${styles.active}`} ref={tabContentRefs[1]}>
                         {
                             donghuasData.map(donghua => {
                                 return (
-                                    <div className={styles.cardDonghua} key={donghua.id}>
-                                        <p className={styles.donghuaName}>
-                                            {donghua.title}
-                                        </p>
-                                        <div className={styles.cardPoster}>
-                                            <Link to={`/donghua/${donghua.title}`} >
-                                                <img 
-                                                    className={styles.posterImg} 
-                                                    src={donghua.poster}
-                                                    alt={`Imagem do Donghua ${donghua.title}`} 
-                                                />
-                                            </Link>
-                                            <div className={styles.cardButtons}>
-                                                <Link to={`/editar-donghua/${donghua.title}`}>
-                                                    <Icon 
-                                                        className={styles.svg} 
-                                                        icon="mdi:pencil-box" 
-                                                        width="24" 
-                                                        color="white" 
-                                                    />
-                                                </Link>
-                                                <Icon
-                                                    className={styles.svg}
-                                                    icon="ic:baseline-delete"
-                                                    width="24"
-                                                    color="white"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <CardPoster donghua={donghua} key={donghua.id}/>
                                 )
                             })
                         }
