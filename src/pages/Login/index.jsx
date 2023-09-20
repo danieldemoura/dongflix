@@ -1,6 +1,6 @@
 import { ReactComponent as VisiblePassword} from "../../components/TextField/show-password.svg";
 import { ReactComponent as HiddenPassword} from "../../components/TextField/hidden-password.svg";
-import { fetchData } from "../../services/MyAPI/fetchData";
+import { fetchUserData } from "../../services/MyAPI/fetchUserData";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import TextField from "../../components/TextField";
@@ -18,7 +18,7 @@ export default function Login() {
     function login(event) {
         event.preventDefault();
         
-        fetchData(data)
+        fetchUserData(data)
         .then(existUser => {
             if (existUser && existUser.length !== 0) {
                 localStorage.setItem("isLogin", JSON.stringify(...existUser));
