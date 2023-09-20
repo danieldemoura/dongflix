@@ -1,11 +1,10 @@
-export async function fetchData(data) {
-    const response = await fetch(`http://localhost:3001/users?email=${data.email}&password=${data.password}`);
-    const responseBody = await response.json();
-
-    const existUser = responseBody.filter(value => {
-        return value.email === data.email && value.password === data.password
-    })
-
-
-    return existUser
+export default async function fetchData(endpoit) {
+    try {
+        const response = await fetch(`https://650b238ddfd73d1fab09a847.mockapi.io/api/v1/${endpoit}`);
+        const body = await response.json();
+        
+        return body
+    } catch (error) {
+        console.log(error)
+    }
 }

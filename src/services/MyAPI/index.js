@@ -1,6 +1,6 @@
 export default async function connectAPI(endpoit) {
     try {
-        const response = await fetch(`http://localhost:3001/${endpoit}`);
+        const response = await fetch(`https://650b0c88dfd73d1fab097c9e.mockapi.io/api/v1/${endpoit}`);
         const body = await response.json();
         
         return body

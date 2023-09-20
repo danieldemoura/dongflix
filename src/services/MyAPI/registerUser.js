@@ -1,6 +1,6 @@
 export async function registerUser(data) {
     try {
-        const response = await fetch("http://localhost:3001/users", {
+        const response = await fetch("https://650b238ddfd73d1fab09a847.mockapi.io/api/v1/users", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
