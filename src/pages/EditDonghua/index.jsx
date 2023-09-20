@@ -5,6 +5,7 @@ import TextField from "../../components/TextField";
 import styles from "./EditDonghua.module.css";
 import ButtonLink from "../../components/ButtonLink";
 import useApiData from "../../hooks/useApiData";
+import { updateDataDonghuas } from "../../services/MyAPI/updateDataDonghuas";
 
 export default function EditDonghua() {
     const [donghuas] = useApiData("donghuas");
@@ -12,9 +13,9 @@ export default function EditDonghua() {
         title: "",
         release: "",
         age: "",
-        genere: "",
+        genres: "",
         status: "",
-        trailer: "",
+        trailers: {},
         poster: "",
         banner: "",
         sinopse: ""
@@ -25,7 +26,9 @@ export default function EditDonghua() {
         const donghua = donghuas.find(donghua => donghua.title === params.name);
     
         if (donghua) {
-            setDonghuaData(donghua);
+            setDonghuaData({
+                ...donghua,
+            });
         }
     
     }, [donghuas]);
@@ -45,12 +48,42 @@ export default function EditDonghua() {
                 age: value.replace(/[^\d]/g, "")
             })
         }
+
+        if(name === "trailers") {
+            setDonghuaData({
+                ...donghuaData,
+                trailers: {
+                    url: donghuaData.trailers.map(trailer => trailer.url),
+                    season: "2ª Temporada - Trailer"
+                }
+            })
+        }
+
+    }
+
+    function saveChanges(event) {
+        event.preventDefault();
+        const data = {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(donghuaData)
+        }
+
+        console.log(donghuaData)
+
+        // updateDataDonghuas("donghuas/0", data);
+    }
+
+    function addEpisode() {
+        alert("Infelizmente essa funcionalidade ainda não foi implementada");
     }
 
     return (
         <article className={styles.article}>
             <h1 className={styles.title}>Adicionar Donghua</h1>
-            <form method="POST" className={styles.form}>
+            <form method="POST" onSubmit={saveChanges} className={styles.form}>
                 <TextField 
                     type="text"
                     label="Nome do Donghua"
@@ -78,15 +111,14 @@ export default function EditDonghua() {
                         className={styles.textField}
                         value={donghuaData.age}
                         onChange={handleInputChange}
-                        pattern="\d+"
                     />
                     <TextField 
                         type="text"
                         label="Gênero"
-                        name="genere"
-                        id="genere"
+                        name="genres"
+                        id="genres"
                         className={styles.textField}
-                        value={donghuaData.genere}
+                        value={donghuaData.genres}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -101,16 +133,16 @@ export default function EditDonghua() {
                         onChange={handleInputChange}
                     >
                         <option value=""></option>
-                        <option value="em_estreia">Em Lançamento</option>
-                        <option value="finalizado">Finalizado</option>
+                        <option value="Em lançamento">Em Lançamento</option>
+                        <option value="Finalizado">Finalizado</option>
                     </TextField>
                     <TextField 
                         type="text"
-                        label="Trailer"
-                        name="trailer"
-                        id="trailer"
+                        label="Trailers"
+                        name="trailers"
+                        id="trailers"
                         className={styles.textField}
-                        value={donghuaData.trailer}
+                        value={donghuaData.trailers}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -163,13 +195,11 @@ export default function EditDonghua() {
                     </p>
                 </div>
                 <div className={styles.seasonEpisodes}>
-                    <div className={styles.addEpisode}>
+                    <div className={styles.addEpisode} onClick={addEpisode}>
                         <span>Adicionar Episódio</span>
-                    </div>
-                    {}                    
+                    </div>                  
                     {
                         donghuaData.seasons &&
-                        // console.log(donghuaData.seasons[0].episodes)
                         [...donghuaData.seasons[0].episodes].reverse().map(episode => {
                             return (
                                 <div className={styles.cardEpisode} key={episode.number}>
