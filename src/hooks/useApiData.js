@@ -3,7 +3,7 @@ import connectAPI from "../services/MyAPI";
 
 export default function useApiData(endpoint) {
     const [data, setData] = useState([]);
-    
+
     const fetchData = () => {
         connectAPI(endpoint).then(json => {
             setData(json);
