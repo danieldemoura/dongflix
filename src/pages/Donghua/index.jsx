@@ -25,7 +25,7 @@ export default function Donghua() {
     const { name } = useParams();
 
     const [donghuaTrailers] = useApiData(`donghuas?title=${name}`);
-    const [relatedDonghuas] = useApiData("donghuas?_limit=10");
+    const [relatedDonghuas] = useApiData("donghuas?limit=10");
     const [trailers, setTrailers] = useState([]);
     const { pathname } = useLocation();
 
