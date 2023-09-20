@@ -25,13 +25,13 @@ export const errorMessages = {
    age: {
       valueMissing: "Esse campo é de preenchimento obrigatório",
    },
-   genere: {
+   genres: {
       valueMissing: "Esse campo é de preenchimento obrigatório",
    },
    status: {
       valueMissing: "Esse campo é de preenchimento obrigatório",
    },
-   trailer: {
+   trailers: {
       valueMissing: "Esse campo é de preenchimento obrigatório",
    },
    poster: {
