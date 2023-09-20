@@ -1,19 +1,18 @@
 {
   "users": [
     {
+      "id": 1,
       "name": "Daniel De Moura",
       "avatar": "https://github.com/danieldemoura.png",
       "email": "naruto@mailna.co",
-      "password": "1234",
-      "role": "admin",
-      "id": 1
+      "password": "1234"
     },
     {
+      "id": 2,
       "name": "Sasuke",
       "avatar": "https://github.com/sasuke.png",
       "email": "exemplo@gmail.com",
-      "password": "1234",
-      "id": 2
+      "password": "1234"
     }
   ],
   "advertisements": [
@@ -336,6 +335,17 @@
               "thumbnail": "https://www.themoviedb.org/t/p/original/6KL4dECom48OEirizdc6LgIJbzA.jpg"
             }
           ]
+        },
+        {
+          "season": "2ª Temporada",
+          "episodes": [
+            {
+              "number": 1,
+              "name": "Episódio 01",
+              "videoURL": "",
+              "thumbnail": "https://www.themoviedb.org/t/p/original/yifdyzpIpXBgzGXvJGtoMF355PK.jpg"
+            }
+          ]
         }
       ]
     },
@@ -400,51 +410,51 @@
   ],
   "releases": [
     {
-      "id": 1,
+      "id": "1",
       "donghua": "Perfect World",
       "url": "episódio 1",
       "episode": {
-        "number": 1,
+        "number": "1",
         "name": "Episódio 1",
         "thumbnail": "https://www.themoviedb.org/t/p/original/6KL4dECom48OEirizdc6LgIJbzA.jpg"
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "donghua": "Doupo Cangqiong 5ª Temporada",
       "url": "episódio 1",
       "episode": {
-        "number": 1,
+        "number": "1",
         "name": "Episódio 1",
         "thumbnail": "https://www.themoviedb.org/t/p/original/6dX5DNtkF2RfQNJRBJZSYPHoUht.jpg"
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "donghua": "Doupo Cangqiong 5ª Temporada",
       "url": "episódio 1",
       "episode": {
-        "number": 2,
+        "number": "2",
         "name": "Episódio 2",
         "thumbnail": "https://www.themoviedb.org/t/p/original/va0YGJyLF5rL7oDwdeesfxeIRTY.jpg"
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "donghua": "A Record of a Mortal’s Journey to Immortality",
       "url": "episódio 1",
       "episode": {
-        "number": 1,
+        "number": "1",
         "name": "1 - Homem comum",
         "thumbnail": "https://www.themoviedb.org/t/p/original/fLibDAIdigmVu0cxVHXA26LI3Vd.jpg"
       }
     },
     {
-      "id": 5,
+      "id": "5",
       "donghua": "Doupo Cangqiong 5ª Temporada",
       "url": "episódio 1",
       "episode": {
-        "number": 3,
+        "number": "3",
         "name": "Episódio 3",
         "thumbnail": "https://www.themoviedb.org/t/p/original/wAuuymDCn9TISrbY7jvuLLLkQls.jpg"
       }
