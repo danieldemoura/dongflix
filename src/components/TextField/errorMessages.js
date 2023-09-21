@@ -31,7 +31,13 @@ export const errorMessages = {
    status: {
       valueMissing: "Esse campo é de preenchimento obrigatório",
    },
-   trailers: {
+   url: {
+      valueMissing: "Esse campo é de preenchimento obrigatório",
+   },
+   season: {
+      valueMissing: "Esse campo é de preenchimento obrigatório",
+   },
+   thumbnail: {
       valueMissing: "Esse campo é de preenchimento obrigatório",
    },
    poster: {
