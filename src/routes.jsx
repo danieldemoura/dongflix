@@ -20,7 +20,7 @@ function AppRoutes() {
               <Route path="donghua/:name" element={<Donghua />} />
               <Route path="add-donghua" element={<AddDonghua />}/>
               <Route path="perfil" element={<Profile />} />
-              <Route path="editar-donghua/:name" element={<AddDonghua />} />
+              <Route path="editar/:name" element={<AddDonghua />} />
           </Route>
       </Routes>
     </BrowserRouter>
