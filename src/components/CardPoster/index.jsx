@@ -17,7 +17,7 @@ export default function CardPoster({donghua}) {
                     />
                 </Link>
                 <div className={styles.cardButtons}>
-                    <Link to={`/editar-donghua/${donghua.title}`}>
+                    <Link to={`/editar/${donghua.title}`}>
                         <Icon 
                             className={styles.svg} 
                             icon="mdi:pencil-box" 
