@@ -1,0 +1,119 @@
+.season {
+    padding: 0rem 1.6rem;
+}
+
+.seasonHeader {
+    color: var(--text-color);
+    background-color: #1A1A1A;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.seasonButtons {
+    display: flex;
+    gap: 4rem;
+}
+
+.seasonBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.seasonInfo {
+    color: var(--text-color);
+    background-color: #0F0F0F;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+
+.seasonEpisodes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    gap: 1rem;
+}
+
+.addEpisode, .cardEpisode {
+    border-radius: 0.8rem;
+    border: 1px solid #0D0D0D;
+    cursor: pointer;
+    background: #262626  url(./episode.svg) no-repeat center top 35%;
+    width: 220px;
+    height: 125px;
+    padding: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.addEpisode:hover {
+    background-color: #0d0d0d;
+    border: 0.1rem solid #262626;
+}
+
+.addEpisode span {
+    color: #FFF;
+    font-size: 1.6rem;
+    margin-top: 20%;
+}
+
+.cardEpisode {
+    background-color: teal;
+    background-image: none;
+    padding: initial;
+    box-shadow: 0px 0px 2px #79929b;
+}
+
+.figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.episodeThumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+
+    .seasonHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 3rem;
+    }
+
+    .seasonEpisodes {
+        justify-content: left;
+    }
+}
