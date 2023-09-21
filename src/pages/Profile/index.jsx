@@ -59,7 +59,7 @@ export default function Profile() {
                             onClick={() => addClass(1)}
                             ref={tabRefs[1]}
                         >
-                                Banco de Dados
+                            Banco de Dados
                         </span>
                     </header>
                     <p className={styles.info}>{ info[indexInfo] }</p>

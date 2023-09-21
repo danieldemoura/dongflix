@@ -1,6 +1,6 @@
 import { DonghuasDataContext } from "../../contexts/DonghuasDataContext";
 import { CarouselContextProvider } from "../../contexts/CarouselContext";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useContext, useEffect, useRef, useState } from "react";
 import { CardEpisode } from "../../components/CardEpisode";
 import { CardDonghua } from "../../components/CardDonghua";
@@ -12,37 +12,41 @@ import YouTube from "react-youtube";
 import TextField from "../../components/TextField";
 import Carousel from "../../components/Carousel";
 import Slider from "../../components/Carousel/Slider";
-import useApiData from "../../hooks/useApiData";
 import styles from "./Donghua.module.css";
 
 export default function Donghua() {
-    const donghuasData = useContext(DonghuasDataContext);
-    const [video, setVideo] = useState();
+    const donghuas= useContext(DonghuasDataContext);
+
     const [currentDonghua, setCurrentDonghua] = useState({});
+    const [relatedDonghuas, setRelatedDonghuas] = useState([]);
+    const [trailers, setTrailers] = useState([]);
+
+    const [youtubeVideo, setYoutubeVideo] = useState();
     const [option, setOption] = useState(0);
+    
     const dialogRef = useRef();
     const btnCloseRef = useRef();
     const { name } = useParams();
 
-    const [donghuaTrailers] = useApiData(`donghuas?title=${name}`);
-    const [relatedDonghuas] = useApiData("donghuas?limit=10");
-    const [trailers, setTrailers] = useState([]);
-    const { pathname } = useLocation();
-
-
     useEffect(() => {
-        const donghuaFound = donghuasData.find(animation => animation.title === name);
+        const donghuaFound = donghuas.find(animation => animation.title === name);
         
         // Se não for undefined adiciona o Donghua encontrado no estado
         if(donghuaFound) {
             setCurrentDonghua(donghuaFound);
+            setTrailers(donghuaFound.trailers);
         }
 
-        if(donghuaTrailers[0]) {
-            setTrailers(donghuaTrailers[0].trailers);
+        if(relatedDonghuas) {
+            // limita a lista de donghua até 10 elementos
+            setRelatedDonghuas(
+                donghuas.filter((donghua, index) => {
+                    return index < 10
+                })
+            )
         }
 
-    }, [donghuasData, donghuaTrailers, pathname])
+    }, [donghuas, name])
 
 
     function closeModal() {
@@ -53,7 +57,7 @@ export default function Donghua() {
     function showModal(url) {
         document.body.style.overflow = "hidden";
         dialogRef.current.showModal();
-        setVideo(url);
+        setYoutubeVideo(url);
     }
 
     function handleSelectChange(event) {
@@ -61,8 +65,9 @@ export default function Donghua() {
         setOption(index);
     }
 
+
     return (
-        <>      
+        <>     
             <Header>
                 <Headline title={currentDonghua.title} link={currentDonghua.banner}>
                     {currentDonghua.seasons !== undefined &&
@@ -146,7 +151,7 @@ export default function Donghua() {
                                 onClick={closeModal}
                             />
                             <YouTube 
-                                videoId={video}
+                                videoId={youtubeVideo}
                                 className={styles.wrapperVideo}
                                 iframeClassName={styles.video}
                             />
