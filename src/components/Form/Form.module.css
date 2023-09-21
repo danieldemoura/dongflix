@@ -1,0 +1,77 @@
+.title {
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 4rem;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    padding: 4rem 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrapperInput {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.textField {
+    color: #ccc;
+    border-radius: 4px;
+    border: 1px solid #262626;
+    background-color: #0D0D0D;
+    flex: 1;
+}
+
+.textField:invalid {
+    border: 1px solid #262626;
+}
+
+.textField:valid {
+    border-color: #262626;
+    outline-color: #262626;
+}
+
+.textArea {
+    resize: none;
+    height: 20rem;
+    white-space: pre-wrap;
+}
+
+.wrapperBtn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 3.4rem;
+    }
+
+    .wrapperInput {
+        flex-direction: row;
+    }
+
+    .wrapperInput div:first-child {
+        width: 19.2rem;
+    }
+
+    .wrapperInput div:first-child span {
+        width: 19.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
