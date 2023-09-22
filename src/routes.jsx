@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import AddDonghua from "./pages/EditDonghua";
 import Profile from "./pages/Profile";
 import Donghua from "./pages/Donghua";
+import { NotFound } from "./pages/NotFound";
 
 function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ function AppRoutes() {
               <Route path="add-donghua" element={<AddDonghua />}/>
               <Route path="perfil" element={<Profile />} />
               <Route path="editar/:name" element={<AddDonghua />} />
+              <Route path="*" element={<NotFound />} />
           </Route>
       </Routes>
     </BrowserRouter>

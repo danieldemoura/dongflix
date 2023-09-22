@@ -13,9 +13,12 @@ import TextField from "../../components/TextField";
 import Carousel from "../../components/Carousel";
 import Slider from "../../components/Carousel/Slider";
 import styles from "./Donghua.module.css";
+import { NotFound } from "../NotFound";
 
 export default function Donghua() {
+    const { name } = useParams();
     const donghuas= useContext(DonghuasDataContext);
+    const donghuaFound = donghuas.find(animation => animation.title === name);
 
     const [currentDonghua, setCurrentDonghua] = useState({});
     const [relatedDonghuas, setRelatedDonghuas] = useState([]);
@@ -26,10 +29,8 @@ export default function Donghua() {
     
     const dialogRef = useRef();
     const btnCloseRef = useRef();
-    const { name } = useParams();
 
     useEffect(() => {
-        const donghuaFound = donghuas.find(animation => animation.title === name);
         
         // Se não for undefined adiciona o Donghua encontrado no estado
         if(donghuaFound) {
@@ -65,6 +66,11 @@ export default function Donghua() {
         setOption(index);
     }
 
+
+
+    if(!donghuaFound) {
+        return <NotFound />
+    }
 
     return (
         <>     
