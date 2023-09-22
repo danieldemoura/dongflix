@@ -64,7 +64,7 @@ Ferramenta de Designer
 Bibliotecas utilizadas
 - <a href="https://reactrouter.com/en/main" alt="_blank">React Router</a>
 - <a href="https://www.npmjs.com/package/react-youtube" alt="_blank">React Youtube</a>
-
+- <a href="https://iconify.design/" alt="_blank">Iconify.design</a>
 
 ---
 
