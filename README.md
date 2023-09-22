@@ -54,17 +54,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - React
-- <a href="https://mockapi.io/" alt="_blank">MockAPI</a>
-- <a href="https://vitejs.dev/" alt="_blank">Vite</a>
-- <a href="https://www.npmjs.com/package/json-server" alt="_blank">JSON Server</a>
+- <a href="https://mockapi.io/" target="_blank">MockAPI</a>
+- <a href="https://vitejs.dev/" target="_blank">Vite</a>
+- <a href="https://www.npmjs.com/package/json-server" target="_blank">JSON Server</a>
 
 Ferramenta de Designer
 - <a href="https://www.figma.com/file/j3EvHKYZxXafXsvDGImYOP/DongFlix?type=design&node-id=1%3A106&mode=dev" target="_blank">Figma</a>
 
 Bibliotecas utilizadas
-- <a href="https://reactrouter.com/en/main" alt="_blank">React Router</a>
-- <a href="https://www.npmjs.com/package/react-youtube" alt="_blank">React Youtube</a>
-- <a href="https://iconify.design/" alt="_blank">Iconify.design</a>
+- <a href="https://reactrouter.com/en/main" target="_blank">React Router</a>
+- <a href="https://www.npmjs.com/package/react-youtube" target="_blank">React Youtube</a>
+- <a href="https://iconify.design/" target="_blank">Iconify.design</a>
 
 ---
 
