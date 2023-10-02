@@ -9,19 +9,10 @@ import { useEffect, useState } from "react";
 import styles from "./Menu.module.css";
 
 export default function Menu() {
-    let urlImage = null;
-
-    // Se por algum motivo não tiver nenhum valor salvo na chave isLogin
-    // O try cath vai evitar que trave o programa ao tentar acessar o atributo .avatar que não existe
-    try {
-        urlImage = JSON.parse(localStorage.getItem("isLogin")).avatar;
-    } catch (error) {
-        console.log(error)
-    }
+    const [showImage, setShowImage] = useState();
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isVisibleMenu, setIsVisibleMenu] = useState(true);
-    const [showImage, setShowImage] = useState(urlImage);
 
     const { pathname } = useLocation();
     const isLogged = pathname === "/home" || pathname === "/perfil" || pathname.startsWith("/donghua/");
@@ -34,7 +25,18 @@ export default function Menu() {
 
     useEffect(() => {
         setIsVisibleMenu(true);
+
+        if(localStorage.getItem("isLogin")) {
+            const {username} = JSON.parse(localStorage.getItem("isLogin"));
+    
+            fetch(`https://api.github.com/users/${username}`)
+            .then(data => data.json())
+            .then(username => setShowImage(username.avatar_url))
+            .catch(error => console.log(error))
+        }
+        
     }, [pathname])
+
 
     return (
         <nav className={`${styles.menu} ${removeLinearGradient ? styles.removeLinearGradient : ""}`}>
@@ -67,12 +69,14 @@ export default function Menu() {
                         <li className={styles.containerIcons}>
                             <Search />
                             <Bell />
-                            <img 
-                                onClick={() => setIsVisibleMenu(!isVisibleMenu)}
-                                className={styles.avatar} 
-                                src={showImage} 
-                                alt="Imagem do Avatar"
-                            />
+                            {showImage &&
+                                <img 
+                                    onClick={() => setIsVisibleMenu(!isVisibleMenu)}
+                                    className={styles.avatar} 
+                                    src={showImage} 
+                                    alt="Imagem do Avatar"
+                                />
+                            }
                             <ul className={`${styles.menuDropDow} ${isVisibleMenu ? "" : styles.isVisible}`}>
                                 <li>
                                     <Link to="/perfil" className={styles.menuDropDowItem}>
