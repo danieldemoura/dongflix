@@ -12,36 +12,31 @@ export default function SignUp() {
     const navigate = useNavigate();
     const [userData, setUserData] = useState({
         name: "",
-        avatar: "",
         email: "",
         password: "",
     });
+    let dataComplete = {}
 
     function signUpUser(event) {
         event.preventDefault();
-        localStorage.setItem("isLogin", JSON.stringify(userData));
+        createUserName()
+        localStorage.setItem("isLogin", JSON.stringify(dataComplete));
         
-        registerUser(userData).then(() => {
+        registerUser(dataComplete).then(() => {
             navigate("/home");
         })
     }
 
-    function createURLAvatar(value) {
-        const name = value;
-        const avatar = name.toLowerCase();
-        const url = avatar.replace(/\s+/g, "");
-        return `https://github.com/${url}.png`
+    function createUserName() {
+        const name = userData.name;
+        const nameLowerCase = name.toLowerCase();
+        const username = nameLowerCase.replace(/\s+/g, "");
+        dataComplete = {...userData, username: username}
     }
     
     function handleInputChange(event) {
         const { name, value } = event.target;
-        let url = userData.avatar;
-
-        if(name === "name") {
-            url = createURLAvatar(value);
-        }
-
-        setUserData({...userData, [name]: value, avatar: url});
+        setUserData({...userData, [name]: value});   
     }
 
     function displayPassword() {
