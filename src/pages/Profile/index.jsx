@@ -38,7 +38,7 @@ export default function Profile() {
             <div className={styles.banner}></div>
             <div className={styles.wrapper}>
                 <figure className={styles.profile}>
-                    <img className={styles.img} src={login.avatar} alt="Imagem de Perfil" />
+                    <img className={styles.img} src={`https://github.com/${login.username}.png`} alt="Imagem de Perfil" />
                     <figcaption className={styles.legend}>
                         <h2 className={styles.title}>{login.name}</h2>
                         <span className={styles.email}>{login.email}</span>    
